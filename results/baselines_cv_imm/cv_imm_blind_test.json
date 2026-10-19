@@ -1,0 +1,84 @@
+{
+  "partition_scenes": [
+    "data/final_2025_scenes/new_york/2025-11-05.npz",
+    "data/final_2025_scenes/new_york/2025-11-09.npz",
+    "data/final_2025_scenes/new_york/2025-11-19.npz",
+    "data/final_2025_scenes/new_york/2025-11-23.npz",
+    "data/final_2025_scenes/new_york/2025-12-03.npz",
+    "data/final_2025_scenes/new_york/2025-12-14.npz",
+    "data/final_2025_scenes/new_york/2025-12-17.npz",
+    "data/final_2025_scenes/new_york/2025-12-28.npz"
+  ],
+  "thresholds_nm": {
+    "severe": 0.25,
+    "moderate": 0.5
+  },
+  "results": {
+    "cv": {
+      "method": "cv",
+      "scene_files": [
+        "data/final_2025_scenes/new_york/2025-11-05.npz",
+        "data/final_2025_scenes/new_york/2025-11-09.npz",
+        "data/final_2025_scenes/new_york/2025-11-19.npz",
+        "data/final_2025_scenes/new_york/2025-11-23.npz",
+        "data/final_2025_scenes/new_york/2025-12-03.npz",
+        "data/final_2025_scenes/new_york/2025-12-14.npz",
+        "data/final_2025_scenes/new_york/2025-12-17.npz",
+        "data/final_2025_scenes/new_york/2025-12-28.npz"
+      ],
+      "scenes": 12103,
+      "valid_vessel_trajectories": 89077,
+      "valid_pairs": 602022,
+      "ade_nm": 2.2510986932578563,
+      "fde_nm": 4.307679959022704,
+      "severe": {
+        "auprc": 0.32208394668966944,
+        "brier": 0.07793395086353103,
+        "ece": 0.05433141790817392,
+        "positive_rate": 0.093245761782792,
+        "positives": 56136
+      },
+      "moderate": {
+        "auprc": 0.4887363112435202,
+        "brier": 0.14727145957374807,
+        "ece": 0.131437374454778,
+        "positive_rate": 0.18744497709386035,
+        "positives": 112846
+      },
+      "score_definition": "sigmoid((0.25nm - predicted_min_pair_distance)/0.25nm); moderate shares the severe-anchored score"
+    },
+    "imm": {
+      "method": "imm",
+      "scene_files": [
+        "data/final_2025_scenes/new_york/2025-11-05.npz",
+        "data/final_2025_scenes/new_york/2025-11-09.npz",
+        "data/final_2025_scenes/new_york/2025-11-19.npz",
+        "data/final_2025_scenes/new_york/2025-11-23.npz",
+        "data/final_2025_scenes/new_york/2025-12-03.npz",
+        "data/final_2025_scenes/new_york/2025-12-14.npz",
+        "data/final_2025_scenes/new_york/2025-12-17.npz",
+        "data/final_2025_scenes/new_york/2025-12-28.npz"
+      ],
+      "scenes": 12103,
+      "valid_vessel_trajectories": 89077,
+      "valid_pairs": 602022,
+      "ade_nm": 2.3171649454860663,
+      "fde_nm": 4.478140699337002,
+      "severe": {
+        "auprc": 0.32181729161976186,
+        "brier": 0.07799706440862511,
+        "ece": 0.0546927564304724,
+        "positive_rate": 0.093245761782792,
+        "positives": 56136
+      },
+      "moderate": {
+        "auprc": 0.48865764214505764,
+        "brier": 0.14752612643131136,
+        "ece": 0.13197107704175617,
+        "positive_rate": 0.18744497709386035,
+        "positives": 112846
+      },
+      "score_definition": "sigmoid((0.25nm - predicted_min_pair_distance)/0.25nm); moderate shares the severe-anchored score"
+    }
+  }
+}

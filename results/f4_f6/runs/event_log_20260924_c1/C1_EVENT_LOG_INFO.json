@@ -1,0 +1,142 @@
+{
+  "analysis": "F2-C1 plain Transformer per-event logs (F6 extension)",
+  "seeds": [
+    17,
+    29,
+    42,
+    71,
+    101,
+    131,
+    211,
+    307,
+    509,
+    887
+  ],
+  "splits": {
+    "val": [
+      "2025-09-03",
+      "2025-09-14",
+      "2025-09-17",
+      "2025-09-28",
+      "2025-10-01",
+      "2025-10-12",
+      "2025-10-15",
+      "2025-10-26"
+    ],
+    "blind": [
+      "2025-11-05",
+      "2025-11-09",
+      "2025-11-19",
+      "2025-11-23",
+      "2025-12-03",
+      "2025-12-14",
+      "2025-12-17",
+      "2025-12-28"
+    ]
+  },
+  "started_utc": "2026-09-24T06:06:03Z",
+  "records": {
+    "val/seed_17": {
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "seconds": 5.5
+    },
+    "val/seed_29": {
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "seconds": 5.1
+    },
+    "val/seed_42": {
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "seconds": 4.9
+    },
+    "val/seed_71": {
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "seconds": 5.0
+    },
+    "val/seed_101": {
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "seconds": 5.2
+    },
+    "val/seed_131": {
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "seconds": 4.9
+    },
+    "val/seed_211": {
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "seconds": 5.0
+    },
+    "val/seed_307": {
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "seconds": 5.0
+    },
+    "val/seed_509": {
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "seconds": 5.1
+    },
+    "val/seed_887": {
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "seconds": 5.1
+    },
+    "blind/seed_17": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 7.6
+    },
+    "blind/seed_29": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 7.9
+    },
+    "blind/seed_42": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 5.5
+    },
+    "blind/seed_71": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 4.6
+    },
+    "blind/seed_101": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 4.6
+    },
+    "blind/seed_131": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 5.1
+    },
+    "blind/seed_211": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 6.2
+    },
+    "blind/seed_307": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 6.2
+    },
+    "blind/seed_509": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 5.0
+    },
+    "blind/seed_887": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 4.9
+    }
+  },
+  "failures": [],
+  "finished_utc": "2026-09-24T06:07:52Z"
+}

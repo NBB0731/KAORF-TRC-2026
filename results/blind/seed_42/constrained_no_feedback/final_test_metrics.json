@@ -1,0 +1,28 @@
+{
+  "selected_epoch": 12,
+  "selection_metric": "joint",
+  "validation_metrics_at_selected_epoch": {
+    "loss": 0.14437966700701538,
+    "ade_nm": 0.8353134657867858,
+    "fde_nm": 1.3184611664402497,
+    "risk_auprc": 0.3805383471827787,
+    "risk_positive_rate": 0.09136867806796957,
+    "risk_brier": 0.06903449445962906,
+    "risk_ece": 0.010113724873430948,
+    "moderate_risk_auprc": 0.5650095059862921,
+    "moderate_risk_brier": 0.11110206693410873,
+    "moderate_risk_ece": 0.014203217402326797
+  },
+  "test_metrics": {
+    "loss": 0.1436038627800759,
+    "ade_nm": 0.8923648255249669,
+    "fde_nm": 1.445237702867506,
+    "risk_auprc": 0.4488519082419782,
+    "risk_positive_rate": 0.093245761782792,
+    "risk_brier": 0.06641418486833572,
+    "risk_ece": 0.006724974498244861,
+    "moderate_risk_auprc": 0.596407054361264,
+    "moderate_risk_brier": 0.10994628071784973,
+    "moderate_risk_ece": 0.013660918557219069
+  }
+}

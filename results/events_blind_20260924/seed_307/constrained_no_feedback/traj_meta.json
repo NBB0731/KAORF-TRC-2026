@@ -1,0 +1,53 @@
+{
+  "seed": 307,
+  "variant": "constrained_no_feedback",
+  "checkpoint": "checkpoints/seed_307/constrained_no_feedback/best.pt",
+  "checkpoint_sha256": "2c00fabdfe2b6bc02f1ee425435979ed4fe9ab6fa83f86e7ff1db32a05023f2e",
+  "blind_dates": [
+    "2025-11-05",
+    "2025-11-09",
+    "2025-11-19",
+    "2025-11-23",
+    "2025-12-03",
+    "2025-12-14",
+    "2025-12-17",
+    "2025-12-28"
+  ],
+  "horizons_min": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30
+  ],
+  "recomputed_ade_nm": 0.8974606990814209,
+  "recomputed_fde_nm": 1.4505921602249146,
+  "guard": {
+    "n_scenes": 12103,
+    "n_nodes": 89077,
+    "per_horizon_ade_nm": [
+      0.3421938121318817,
+      0.5771138072013855,
+      0.7840880751609802,
+      1.0018961429595947,
+      1.2288801670074463,
+      1.4505921602249146
+    ],
+    "archived_deltas": {
+      "ade_nm": {
+        "recomputed": 0.8974606990814209,
+        "archived": 0.8974445323755986,
+        "abs": 1.616670582227364e-05,
+        "rel": 1.8014156016393836e-05
+      },
+      "fde_nm": {
+        "recomputed": 1.4505921602249146,
+        "archived": 1.450577886174497,
+        "abs": 1.4274050417650841e-05,
+        "rel": 9.840250946672538e-06
+      }
+    }
+  },
+  "seconds": 12.5
+}

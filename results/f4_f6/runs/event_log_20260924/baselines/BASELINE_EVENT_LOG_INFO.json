@@ -1,0 +1,218 @@
+{
+  "analysis": "F2-C2 baseline per-event risk scores (F6 extension)",
+  "methods": [
+    "cv",
+    "imm"
+  ],
+  "splits": {
+    "val": [
+      "2025-09-03",
+      "2025-09-14",
+      "2025-09-17",
+      "2025-09-28",
+      "2025-10-01",
+      "2025-10-12",
+      "2025-10-15",
+      "2025-10-26"
+    ],
+    "blind": [
+      "2025-11-05",
+      "2025-11-09",
+      "2025-11-19",
+      "2025-11-23",
+      "2025-12-03",
+      "2025-12-14",
+      "2025-12-17",
+      "2025-12-28"
+    ]
+  },
+  "started_utc": "2026-09-24T05:39:06Z",
+  "records": {
+    "val/cv": {
+      "method": "cv",
+      "split": "val",
+      "dates": [
+        "2025-09-03",
+        "2025-09-14",
+        "2025-09-17",
+        "2025-09-28",
+        "2025-10-01",
+        "2025-10-12",
+        "2025-10-15",
+        "2025-10-26"
+      ],
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "recomputed_severe_upper_tri": {
+        "auprc": 0.2605803125320931,
+        "brier": 0.08117054691475134,
+        "ece": 0.06273395952032018,
+        "positive_rate": 0.09136867806796957,
+        "positives": 17513
+      },
+      "recomputed_moderate_upper_tri": {
+        "auprc": 0.449915505552661,
+        "brier": 0.14988473331649782,
+        "ece": 0.13270737048220216,
+        "positive_rate": 0.18365036468169912,
+        "positives": 35201
+      },
+      "recomputed_severe_full_matrix": {
+        "auprc": 0.2605554851199446,
+        "brier": 0.08117054691475133,
+        "ece": 0.06273395952032018,
+        "positive_rate": 0.09136867806796957,
+        "positives": 35026
+      },
+      "recomputed_moderate_full_matrix": {
+        "auprc": 0.4499027296099587,
+        "brier": 0.14988473331649782,
+        "ece": 0.13270737048220216,
+        "positive_rate": 0.18365036468169912,
+        "positives": 70402
+      },
+      "score_definition": "sigmoid((0.25nm - predicted_min_pair_distance)/0.25nm); moderate shares the severe-anchored score",
+      "seconds": 1.1
+    },
+    "blind/cv": {
+      "method": "cv",
+      "split": "blind",
+      "dates": [
+        "2025-11-05",
+        "2025-11-09",
+        "2025-11-19",
+        "2025-11-23",
+        "2025-12-03",
+        "2025-12-14",
+        "2025-12-17",
+        "2025-12-28"
+      ],
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "recomputed_severe_upper_tri": {
+        "auprc": 0.3220976711276456,
+        "brier": 0.07793395086353104,
+        "ece": 0.05433141790817392,
+        "positive_rate": 0.093245761782792,
+        "positives": 28068
+      },
+      "recomputed_moderate_upper_tri": {
+        "auprc": 0.4887425351859533,
+        "brier": 0.14727145957374804,
+        "ece": 0.131437374454778,
+        "positive_rate": 0.18744497709386035,
+        "positives": 56423
+      },
+      "recomputed_severe_full_matrix": {
+        "auprc": 0.32208394668966944,
+        "brier": 0.07793395086353103,
+        "ece": 0.05433141790817392,
+        "positive_rate": 0.093245761782792,
+        "positives": 56136
+      },
+      "recomputed_moderate_full_matrix": {
+        "auprc": 0.4887363112435202,
+        "brier": 0.14727145957374807,
+        "ece": 0.131437374454778,
+        "positive_rate": 0.18744497709386035,
+        "positives": 112846
+      },
+      "score_definition": "sigmoid((0.25nm - predicted_min_pair_distance)/0.25nm); moderate shares the severe-anchored score",
+      "seconds": 1.7
+    },
+    "val/imm": {
+      "method": "imm",
+      "split": "val",
+      "dates": [
+        "2025-09-03",
+        "2025-09-14",
+        "2025-09-17",
+        "2025-09-28",
+        "2025-10-01",
+        "2025-10-12",
+        "2025-10-15",
+        "2025-10-26"
+      ],
+      "n_scenes": 8069,
+      "n_events": 191674,
+      "recomputed_severe_upper_tri": {
+        "auprc": 0.2615353544163573,
+        "brier": 0.0810656460738295,
+        "ece": 0.062353737993641266,
+        "positive_rate": 0.09136867806796957,
+        "positives": 17513
+      },
+      "recomputed_moderate_upper_tri": {
+        "auprc": 0.44945782099278353,
+        "brier": 0.1501339890930586,
+        "ece": 0.13338894552197048,
+        "positive_rate": 0.18365036468169912,
+        "positives": 35201
+      },
+      "recomputed_severe_full_matrix": {
+        "auprc": 0.2615008859235753,
+        "brier": 0.08106564607382949,
+        "ece": 0.062353737993641266,
+        "positive_rate": 0.09136867806796957,
+        "positives": 35026
+      },
+      "recomputed_moderate_full_matrix": {
+        "auprc": 0.4494397981696331,
+        "brier": 0.15013398909305858,
+        "ece": 0.13338894552197048,
+        "positive_rate": 0.18365036468169912,
+        "positives": 70402
+      },
+      "score_definition": "sigmoid((0.25nm - predicted_min_pair_distance)/0.25nm); moderate shares the severe-anchored score",
+      "seconds": 1.2
+    },
+    "blind/imm": {
+      "method": "imm",
+      "split": "blind",
+      "dates": [
+        "2025-11-05",
+        "2025-11-09",
+        "2025-11-19",
+        "2025-11-23",
+        "2025-12-03",
+        "2025-12-14",
+        "2025-12-17",
+        "2025-12-28"
+      ],
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "recomputed_severe_upper_tri": {
+        "auprc": 0.3218378934036213,
+        "brier": 0.07799706440862514,
+        "ece": 0.0546927564304724,
+        "positive_rate": 0.093245761782792,
+        "positives": 28068
+      },
+      "recomputed_moderate_upper_tri": {
+        "auprc": 0.48866753598341345,
+        "brier": 0.14752612643131127,
+        "ece": 0.13197107704175617,
+        "positive_rate": 0.18744497709386035,
+        "positives": 56423
+      },
+      "recomputed_severe_full_matrix": {
+        "auprc": 0.32181729161976186,
+        "brier": 0.07799706440862511,
+        "ece": 0.0546927564304724,
+        "positive_rate": 0.093245761782792,
+        "positives": 56136
+      },
+      "recomputed_moderate_full_matrix": {
+        "auprc": 0.48865764214505764,
+        "brier": 0.14752612643131136,
+        "ece": 0.13197107704175617,
+        "positive_rate": 0.18744497709386035,
+        "positives": 112846
+      },
+      "score_definition": "sigmoid((0.25nm - predicted_min_pair_distance)/0.25nm); moderate shares the severe-anchored score",
+      "seconds": 1.5
+    }
+  },
+  "failures": [],
+  "finished_utc": "2026-09-24T05:39:12Z"
+}

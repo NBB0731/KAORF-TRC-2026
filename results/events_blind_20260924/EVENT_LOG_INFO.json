@@ -1,0 +1,151 @@
+{
+  "tag": "blind",
+  "analysis": "F4 (day-clustered inference) + F6 (post-hoc calibration)",
+  "blind_dates": [
+    "2025-11-05",
+    "2025-11-09",
+    "2025-11-19",
+    "2025-11-23",
+    "2025-12-03",
+    "2025-12-14",
+    "2025-12-17",
+    "2025-12-28"
+  ],
+  "seeds": [
+    17,
+    29,
+    42,
+    71,
+    101,
+    131,
+    211,
+    307,
+    509,
+    887
+  ],
+  "variants": [
+    "constrained_feedback",
+    "constrained_no_feedback"
+  ],
+  "device": "cpu",
+  "protocol": {
+    "re_evaluation_only": true,
+    "retrained": false,
+    "checkpoints": "New York validation-selected, selection_metric=joint",
+    "blind_partition_never_trained": true,
+    "output_granularity_changed": "aggregate -> per-event"
+  },
+  "code_sha256": {
+    "scripts/dump_event_log.py": "e1628254aa671ff59464b5dd07024542ab3136b03a5e9d0235b20f86421e6a23"
+  },
+  "guard_tolerance": {
+    "aggregate_abs": 2e-06,
+    "aggregate_rel": 2e-05,
+    "perday_vs_pooled": 1e-06
+  },
+  "started_utc": "2026-09-24T14:03:04Z",
+  "records": {
+    "seed_17/constrained_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 11.5
+    },
+    "seed_17/constrained_no_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 11.2
+    },
+    "seed_29/constrained_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.4
+    },
+    "seed_29/constrained_no_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.0
+    },
+    "seed_42/constrained_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.4
+    },
+    "seed_42/constrained_no_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.3
+    },
+    "seed_71/constrained_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.6
+    },
+    "seed_71/constrained_no_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.4
+    },
+    "seed_101/constrained_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.4
+    },
+    "seed_101/constrained_no_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.3
+    },
+    "seed_131/constrained_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 13.0
+    },
+    "seed_131/constrained_no_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.7
+    },
+    "seed_211/constrained_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 13.9
+    },
+    "seed_211/constrained_no_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 13.3
+    },
+    "seed_307/constrained_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 13.2
+    },
+    "seed_307/constrained_no_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.7
+    },
+    "seed_509/constrained_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 13.0
+    },
+    "seed_509/constrained_no_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.7
+    },
+    "seed_887/constrained_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 13.1
+    },
+    "seed_887/constrained_no_feedback": {
+      "n_scenes": 12103,
+      "n_events": 301011,
+      "seconds": 12.9
+    }
+  },
+  "finished_utc": "2026-09-24T14:07:16Z",
+  "failures": []
+}

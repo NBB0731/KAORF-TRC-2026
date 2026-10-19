@@ -1,0 +1,13 @@
+# Byte-for-byte fidelity: disable end-of-line conversion for every file so that
+# MANIFEST.sha256 verifies identically on any machine, whatever core.autocrlf
+# the cloner happens to have. Text files therefore keep the line endings they
+# were archived with.
+* -text
+
+# Binary artefacts (also excluded from diff and merge).
+*.pt    binary
+*.npz   binary
+*.png   binary
+*.pdf   binary
+*.tgz   binary
+*.zip   binary

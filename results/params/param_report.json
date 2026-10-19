@@ -1,0 +1,95 @@
+{
+ "KAORF (constrained_feedback)": {
+  "total": 353295,
+  "trainable": 353295,
+  "buffers": 8,
+  "per_module": {
+   "token": 1056,
+   "temporal": 223680,
+   "static": 9600,
+   "node_attention": 37248,
+   "node_norm": 192,
+   "decoder": 20940,
+   "risk_message": 27840,
+   "edge_risk": 18817,
+   "kinematic_edge_risk": 10657,
+   "kinematic_moderate_delta": 1345,
+   "time_embedding(direct)": 1920
+  }
+ },
+ "No-feedback baseline": {
+  "total": 353295,
+  "trainable": 353295,
+  "buffers": 8,
+  "per_module": {
+   "token": 1056,
+   "temporal": 223680,
+   "static": 9600,
+   "node_attention": 37248,
+   "node_norm": 192,
+   "decoder": 20940,
+   "risk_message": 27840,
+   "edge_risk": 18817,
+   "kinematic_edge_risk": 10657,
+   "kinematic_moderate_delta": 1345,
+   "time_embedding(direct)": 1920
+  }
+ },
+ "C1 plain Transformer": {
+  "total": 313453,
+  "trainable": 313453,
+  "buffers": 8,
+  "per_module": {
+   "token": 1056,
+   "temporal": 223680,
+   "static": 9600,
+   "node_attention": 37248,
+   "node_norm": 192,
+   "decoder": 20940,
+   "edge_risk": 18817,
+   "time_embedding(direct)": 1920
+  }
+ },
+ "C3 graph baseline": {
+  "total": 295021,
+  "trainable": 295021,
+  "buffers": 8,
+  "per_module": {
+   "token": 1056,
+   "temporal": 223680,
+   "static": 9600,
+   "gcn_linears": 18624,
+   "gcn_norms": 384,
+   "gcn_dropout": 0,
+   "decoder": 20940,
+   "edge_risk": 18817,
+   "time_embedding(direct)": 1920
+  }
+ },
+ "forward_shapes": {
+  "KAORF (constrained_feedback)": [
+   2,
+   8,
+   6,
+   2
+  ],
+  "No-feedback baseline": [
+   2,
+   8,
+   6,
+   2
+  ],
+  "C1 plain Transformer": [
+   2,
+   8,
+   6,
+   2
+  ],
+  "C3 graph baseline": [
+   2,
+   8,
+   6,
+   2
+  ]
+ }
+}

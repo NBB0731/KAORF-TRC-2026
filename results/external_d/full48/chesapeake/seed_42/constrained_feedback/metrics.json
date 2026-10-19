@@ -1,0 +1,1015 @@
+{
+  "port": "chesapeake",
+  "tag": "full48",
+  "days_mode": "all",
+  "seed": 42,
+  "variant": "constrained_feedback",
+  "checkpoint": "runs/final_ny_temporal_10seed_20260921/seed_42/constrained_feedback/best.pt",
+  "checkpoint_mtime_utc": "2026-09-23T03:24:31Z",
+  "selected_epoch": 12,
+  "n_days": 48,
+  "n_scenes": 19517,
+  "n_node_samples": 56518,
+  "dates": [
+    "2025-01-01",
+    "2025-01-12",
+    "2025-01-15",
+    "2025-01-26",
+    "2025-02-05",
+    "2025-02-09",
+    "2025-02-19",
+    "2025-02-23",
+    "2025-03-05",
+    "2025-03-09",
+    "2025-03-19",
+    "2025-03-23",
+    "2025-04-02",
+    "2025-04-13",
+    "2025-04-16",
+    "2025-04-27",
+    "2025-05-07",
+    "2025-05-11",
+    "2025-05-21",
+    "2025-05-25",
+    "2025-06-04",
+    "2025-06-08",
+    "2025-06-18",
+    "2025-06-22",
+    "2025-07-02",
+    "2025-07-13",
+    "2025-07-16",
+    "2025-07-27",
+    "2025-08-06",
+    "2025-08-10",
+    "2025-08-20",
+    "2025-08-24",
+    "2025-09-03",
+    "2025-09-14",
+    "2025-09-17",
+    "2025-09-28",
+    "2025-10-01",
+    "2025-10-12",
+    "2025-10-15",
+    "2025-10-26",
+    "2025-11-05",
+    "2025-11-09",
+    "2025-11-19",
+    "2025-11-23",
+    "2025-12-03",
+    "2025-12-14",
+    "2025-12-17",
+    "2025-12-28"
+  ],
+  "pooled_metrics": {
+    "loss": 0.1351741164428496,
+    "ade_nm": 1.1144727896979674,
+    "fde_nm": 2.028426283563678,
+    "risk_auprc": 0.6172283562195471,
+    "risk_positive_rate": 0.09470788749819034,
+    "risk_brier": 0.054080452769994736,
+    "risk_ece": 0.009772586710487769,
+    "moderate_risk_auprc": 0.6970695829774516,
+    "moderate_risk_brier": 0.08530550450086594,
+    "moderate_risk_ece": 0.01238215676028615
+  },
+  "node_weighted_from_days": {
+    "ade_nm": 1.114472790917062,
+    "fde_nm": 2.0284262769395203
+  },
+  "consistency_rel_diff": {
+    "ade_nm": 1.0938756103455469e-09,
+    "fde_nm": 3.2656634951490026e-09
+  },
+  "consistency_tolerance": 1e-06,
+  "ny_validation_metrics_at_selected_epoch": {
+    "loss": 0.14384491394182636,
+    "ade_nm": 0.8147904181439544,
+    "fde_nm": 1.2841071364757843,
+    "risk_auprc": 0.38238666332925264,
+    "risk_positive_rate": 0.09136867806796957,
+    "risk_brier": 0.06897558271884918,
+    "risk_ece": 0.010342083392006101,
+    "moderate_risk_auprc": 0.5646778882389578,
+    "moderate_risk_brier": 0.11118173599243164,
+    "moderate_risk_ece": 0.014715443178743135
+  },
+  "risk_targets": {
+    "close_threshold_nm": 0.25,
+    "moderate_threshold_nm": 0.5
+  },
+  "per_day": [
+    {
+      "date": "2025-01-01",
+      "month": 1,
+      "stratum": "weekday_1",
+      "n_scenes": 127,
+      "node_samples": 302,
+      "metrics": {
+        "loss": 0.19718579345981016,
+        "ade_nm": 0.9963254367630721,
+        "fde_nm": 1.732793514349978,
+        "risk_auprc": 0.515280038729494,
+        "risk_positive_rate": 0.16170212765957448,
+        "risk_brier": 0.11157996207475662,
+        "risk_ece": 0.07867442502620373,
+        "moderate_risk_auprc": 0.6187887676019472,
+        "moderate_risk_brier": 0.14399251341819763,
+        "moderate_risk_ece": 0.08017184493389536
+      }
+    },
+    {
+      "date": "2025-01-12",
+      "month": 1,
+      "stratum": "weekend_2",
+      "n_scenes": 390,
+      "node_samples": 931,
+      "metrics": {
+        "loss": 0.16587973486884197,
+        "ade_nm": 1.1285088031941062,
+        "fde_nm": 2.0225753987546193,
+        "risk_auprc": 0.7968421052371825,
+        "risk_positive_rate": 0.19754768392370572,
+        "risk_brier": 0.08007021248340607,
+        "risk_ece": 0.05002115082188588,
+        "moderate_risk_auprc": 0.8161161418134337,
+        "moderate_risk_brier": 0.08914145082235336,
+        "moderate_risk_ece": 0.03161050116374318
+      }
+    },
+    {
+      "date": "2025-01-15",
+      "month": 1,
+      "stratum": "weekday_3",
+      "n_scenes": 79,
+      "node_samples": 182,
+      "metrics": {
+        "loss": 0.2372535603059517,
+        "ade_nm": 1.2894594016269907,
+        "fde_nm": 2.2087031320461397,
+        "risk_auprc": 0.7911355248373821,
+        "risk_positive_rate": 0.2517985611510791,
+        "risk_brier": 0.1273535192012787,
+        "risk_ece": 0.10355105422597995,
+        "moderate_risk_auprc": 0.8707502614535908,
+        "moderate_risk_brier": 0.12480895221233368,
+        "moderate_risk_ece": 0.09601227896247835
+      }
+    },
+    {
+      "date": "2025-01-26",
+      "month": 1,
+      "stratum": "weekend_4",
+      "n_scenes": 142,
+      "node_samples": 378,
+      "metrics": {
+        "loss": 0.12804441753203277,
+        "ade_nm": 1.0519043372363543,
+        "fde_nm": 1.880542614626544,
+        "risk_auprc": 0.7357564765631044,
+        "risk_positive_rate": 0.10810810810810811,
+        "risk_brier": 0.05049162730574608,
+        "risk_ece": 0.017870797128107685,
+        "moderate_risk_auprc": 0.7655765049344212,
+        "moderate_risk_brier": 0.08383695781230927,
+        "moderate_risk_ece": 0.026502597587370755
+      }
+    },
+    {
+      "date": "2025-02-05",
+      "month": 2,
+      "stratum": "weekday_1",
+      "n_scenes": 112,
+      "node_samples": 299,
+      "metrics": {
+        "loss": 0.1313669334685922,
+        "ade_nm": 1.096927118322173,
+        "fde_nm": 1.934501343571444,
+        "risk_auprc": 0.7993272008063932,
+        "risk_positive_rate": 0.10461538461538461,
+        "risk_brier": 0.039954207837581635,
+        "risk_ece": 0.02832656796161945,
+        "moderate_risk_auprc": 0.788930139266356,
+        "moderate_risk_brier": 0.07201569527387619,
+        "moderate_risk_ece": 0.06087946343880433
+      }
+    },
+    {
+      "date": "2025-02-09",
+      "month": 2,
+      "stratum": "weekend_2",
+      "n_scenes": 140,
+      "node_samples": 321,
+      "metrics": {
+        "loss": 0.1461212468852878,
+        "ade_nm": 0.9970861151201362,
+        "fde_nm": 1.7918384519892616,
+        "risk_auprc": 0.8042431922000293,
+        "risk_positive_rate": 0.15450643776824036,
+        "risk_brier": 0.06536497175693512,
+        "risk_ece": 0.03288109244003317,
+        "moderate_risk_auprc": 0.8091314378677792,
+        "moderate_risk_brier": 0.09570690989494324,
+        "moderate_risk_ece": 0.04486358773299041
+      }
+    },
+    {
+      "date": "2025-02-19",
+      "month": 2,
+      "stratum": "weekday_3",
+      "n_scenes": 232,
+      "node_samples": 560,
+      "metrics": {
+        "loss": 0.18653583557211928,
+        "ade_nm": 1.058290677147614,
+        "fde_nm": 1.8652667061188675,
+        "risk_auprc": 0.719699049507597,
+        "risk_positive_rate": 0.17841409691629956,
+        "risk_brier": 0.08347834646701813,
+        "risk_ece": 0.04154296087240596,
+        "moderate_risk_auprc": 0.7715657577427119,
+        "moderate_risk_brier": 0.11977609992027283,
+        "moderate_risk_ece": 0.04013974103042733
+      }
+    },
+    {
+      "date": "2025-02-23",
+      "month": 2,
+      "stratum": "weekend_4",
+      "n_scenes": 39,
+      "node_samples": 81,
+      "metrics": {
+        "loss": 0.204502718868079,
+        "ade_nm": 1.2842949647361543,
+        "fde_nm": 2.3307576539710153,
+        "risk_auprc": 0.8875869080414536,
+        "risk_positive_rate": 0.24444444444444444,
+        "risk_brier": 0.11891505122184753,
+        "risk_ece": 0.1402373668220308,
+        "moderate_risk_auprc": 0.8683351370851372,
+        "moderate_risk_brier": 0.09719076007604599,
+        "moderate_risk_ece": 0.1220580799712075
+      }
+    },
+    {
+      "date": "2025-03-05",
+      "month": 3,
+      "stratum": "weekday_1",
+      "n_scenes": 578,
+      "node_samples": 1798,
+      "metrics": {
+        "loss": 0.1296495029016981,
+        "ade_nm": 1.0565743730872774,
+        "fde_nm": 1.9176981451710504,
+        "risk_auprc": 0.6431962541200402,
+        "risk_positive_rate": 0.09522058823529411,
+        "risk_brier": 0.05338761955499649,
+        "risk_ece": 0.009006337414714783,
+        "moderate_risk_auprc": 0.6965692957102255,
+        "moderate_risk_brier": 0.08201918005943298,
+        "moderate_risk_ece": 0.011523531318423064
+      }
+    },
+    {
+      "date": "2025-03-09",
+      "month": 3,
+      "stratum": "weekend_2",
+      "n_scenes": 202,
+      "node_samples": 489,
+      "metrics": {
+        "loss": 0.2062121175976131,
+        "ade_nm": 1.2503161595231893,
+        "fde_nm": 2.2457902658431497,
+        "risk_auprc": 0.6228833056804738,
+        "risk_positive_rate": 0.15776699029126215,
+        "risk_brier": 0.09175778925418854,
+        "risk_ece": 0.03818239944363103,
+        "moderate_risk_auprc": 0.7679734014692042,
+        "moderate_risk_brier": 0.12059174478054047,
+        "moderate_risk_ece": 0.05550290691187081
+      }
+    },
+    {
+      "date": "2025-03-19",
+      "month": 3,
+      "stratum": "weekday_3",
+      "n_scenes": 824,
+      "node_samples": 2757,
+      "metrics": {
+        "loss": 0.12388967782918378,
+        "ade_nm": 1.0622919528516062,
+        "fde_nm": 1.9299089811933652,
+        "risk_auprc": 0.6292119249591395,
+        "risk_positive_rate": 0.09242976624490672,
+        "risk_brier": 0.05278269574046135,
+        "risk_ece": 0.011235717443560366,
+        "moderate_risk_auprc": 0.7229292767799552,
+        "moderate_risk_brier": 0.08093826472759247,
+        "moderate_risk_ece": 0.017218516378597774
+      }
+    },
+    {
+      "date": "2025-03-23",
+      "month": 3,
+      "stratum": "weekend_4",
+      "n_scenes": 862,
+      "node_samples": 2514,
+      "metrics": {
+        "loss": 0.14346432960284733,
+        "ade_nm": 1.0687045901483017,
+        "fde_nm": 1.9750474556307571,
+        "risk_auprc": 0.5938588064621684,
+        "risk_positive_rate": 0.10411120970127181,
+        "risk_brier": 0.06087653711438179,
+        "risk_ece": 0.02026892368370737,
+        "moderate_risk_auprc": 0.7105486850419558,
+        "moderate_risk_brier": 0.0910191759467125,
+        "moderate_risk_ece": 0.029559205012675293
+      }
+    },
+    {
+      "date": "2025-04-02",
+      "month": 4,
+      "stratum": "weekday_1",
+      "n_scenes": 384,
+      "node_samples": 1047,
+      "metrics": {
+        "loss": 0.15200273105527748,
+        "ade_nm": 1.236416255037706,
+        "fde_nm": 2.2220138667559888,
+        "risk_auprc": 0.6541205812159332,
+        "risk_positive_rate": 0.1168412570507655,
+        "risk_brier": 0.06386740505695343,
+        "risk_ece": 0.0240629856203781,
+        "moderate_risk_auprc": 0.7364441442094873,
+        "moderate_risk_brier": 0.08848632872104645,
+        "moderate_risk_ece": 0.0350718241512151
+      }
+    },
+    {
+      "date": "2025-04-13",
+      "month": 4,
+      "stratum": "weekend_2",
+      "n_scenes": 278,
+      "node_samples": 636,
+      "metrics": {
+        "loss": 0.11624730217897292,
+        "ade_nm": 1.074205882515248,
+        "fde_nm": 1.9437100471231168,
+        "risk_auprc": 0.6594500935496953,
+        "risk_positive_rate": 0.0787746170678337,
+        "risk_brier": 0.04353686422109604,
+        "risk_ece": 0.03337658856968911,
+        "moderate_risk_auprc": 0.6295488252823096,
+        "moderate_risk_brier": 0.0867951288819313,
+        "moderate_risk_ece": 0.04360002814027883
+      }
+    },
+    {
+      "date": "2025-04-16",
+      "month": 4,
+      "stratum": "weekday_3",
+      "n_scenes": 273,
+      "node_samples": 729,
+      "metrics": {
+        "loss": 0.1418163680122713,
+        "ade_nm": 1.1208063810142102,
+        "fde_nm": 2.017230022061198,
+        "risk_auprc": 0.5991302691928977,
+        "risk_positive_rate": 0.10108303249097472,
+        "risk_brier": 0.05990000069141388,
+        "risk_ece": 0.023878086524176112,
+        "moderate_risk_auprc": 0.6723880320791257,
+        "moderate_risk_brier": 0.08567787706851959,
+        "moderate_risk_ece": 0.02463043482008107
+      }
+    },
+    {
+      "date": "2025-04-27",
+      "month": 4,
+      "stratum": "weekend_4",
+      "n_scenes": 683,
+      "node_samples": 1859,
+      "metrics": {
+        "loss": 0.15034379775627382,
+        "ade_nm": 1.1057397926488903,
+        "fde_nm": 1.9726824159574228,
+        "risk_auprc": 0.577871770453951,
+        "risk_positive_rate": 0.11521843494959194,
+        "risk_brier": 0.06787063181400299,
+        "risk_ece": 0.019222446787517573,
+        "moderate_risk_auprc": 0.6857721624656442,
+        "moderate_risk_brier": 0.0955921858549118,
+        "moderate_risk_ece": 0.015407102274611437
+      }
+    },
+    {
+      "date": "2025-05-07",
+      "month": 5,
+      "stratum": "weekday_1",
+      "n_scenes": 346,
+      "node_samples": 903,
+      "metrics": {
+        "loss": 0.1326703182354586,
+        "ade_nm": 1.1955998814945303,
+        "fde_nm": 2.2413785177916665,
+        "risk_auprc": 0.6651514863062294,
+        "risk_positive_rate": 0.09433962264150944,
+        "risk_brier": 0.04935302957892418,
+        "risk_ece": 0.03659688926340142,
+        "moderate_risk_auprc": 0.6955702105426964,
+        "moderate_risk_brier": 0.07788316160440445,
+        "moderate_risk_ece": 0.030238471189296737
+      }
+    },
+    {
+      "date": "2025-05-11",
+      "month": 5,
+      "stratum": "weekend_2",
+      "n_scenes": 764,
+      "node_samples": 2065,
+      "metrics": {
+        "loss": 0.10991451380544368,
+        "ade_nm": 1.130786349138074,
+        "fde_nm": 2.1379716001351854,
+        "risk_auprc": 0.6908354232636581,
+        "risk_positive_rate": 0.07611668185961713,
+        "risk_brier": 0.03890227526426315,
+        "risk_ece": 0.020031796391364,
+        "moderate_risk_auprc": 0.7434179338150141,
+        "moderate_risk_brier": 0.0700555145740509,
+        "moderate_risk_ece": 0.023809834020916937
+      }
+    },
+    {
+      "date": "2025-05-21",
+      "month": 5,
+      "stratum": "weekday_3",
+      "n_scenes": 699,
+      "node_samples": 2107,
+      "metrics": {
+        "loss": 0.1426896393178875,
+        "ade_nm": 1.0954437850596064,
+        "fde_nm": 1.979762859627376,
+        "risk_auprc": 0.4949686805859075,
+        "risk_positive_rate": 0.09041282838621631,
+        "risk_brier": 0.06043095886707306,
+        "risk_ece": 0.015134607940271666,
+        "moderate_risk_auprc": 0.601213558475625,
+        "moderate_risk_brier": 0.09093722701072693,
+        "moderate_risk_ece": 0.01750246122738722
+      }
+    },
+    {
+      "date": "2025-05-25",
+      "month": 5,
+      "stratum": "weekend_4",
+      "n_scenes": 444,
+      "node_samples": 1134,
+      "metrics": {
+        "loss": 0.1403070370481075,
+        "ade_nm": 1.1209176033774442,
+        "fde_nm": 2.0666027223774477,
+        "risk_auprc": 0.5665751040812375,
+        "risk_positive_rate": 0.09430438842203548,
+        "risk_brier": 0.05736991763114929,
+        "risk_ece": 0.018516976555007628,
+        "moderate_risk_auprc": 0.7294997225905276,
+        "moderate_risk_brier": 0.07817426323890686,
+        "moderate_risk_ece": 0.022995885068517664
+      }
+    },
+    {
+      "date": "2025-06-04",
+      "month": 6,
+      "stratum": "weekday_1",
+      "n_scenes": 573,
+      "node_samples": 1732,
+      "metrics": {
+        "loss": 0.11915839466053399,
+        "ade_nm": 1.055364907556818,
+        "fde_nm": 1.9010435729085091,
+        "risk_auprc": 0.5355510933253932,
+        "risk_positive_rate": 0.07167497125335377,
+        "risk_brier": 0.04623492807149887,
+        "risk_ece": 0.006599155335693168,
+        "moderate_risk_auprc": 0.6514283519839099,
+        "moderate_risk_brier": 0.0737980455160141,
+        "moderate_risk_ece": 0.025089208901231203
+      }
+    },
+    {
+      "date": "2025-06-08",
+      "month": 6,
+      "stratum": "weekend_2",
+      "n_scenes": 895,
+      "node_samples": 2693,
+      "metrics": {
+        "loss": 0.11111253181820327,
+        "ade_nm": 1.09948771773713,
+        "fde_nm": 2.061399697660281,
+        "risk_auprc": 0.5131952045313755,
+        "risk_positive_rate": 0.05620985010706638,
+        "risk_brier": 0.03703702613711357,
+        "risk_ece": 0.016368182353093036,
+        "moderate_risk_auprc": 0.5981650606141813,
+        "moderate_risk_brier": 0.0692346915602684,
+        "moderate_risk_ece": 0.026056294919767395
+      }
+    },
+    {
+      "date": "2025-06-18",
+      "month": 6,
+      "stratum": "weekday_3",
+      "n_scenes": 580,
+      "node_samples": 2146,
+      "metrics": {
+        "loss": 0.13376797063194584,
+        "ade_nm": 1.1717693201826005,
+        "fde_nm": 2.1280949604209902,
+        "risk_auprc": 0.5238344048590379,
+        "risk_positive_rate": 0.08762886597938144,
+        "risk_brier": 0.057730190455913544,
+        "risk_ece": 0.0174280764786448,
+        "moderate_risk_auprc": 0.6750456558917867,
+        "moderate_risk_brier": 0.08884815126657486,
+        "moderate_risk_ece": 0.029228578673391105
+      }
+    },
+    {
+      "date": "2025-06-22",
+      "month": 6,
+      "stratum": "weekend_4",
+      "n_scenes": 183,
+      "node_samples": 410,
+      "metrics": {
+        "loss": 0.15338716884938683,
+        "ade_nm": 1.2901485457382922,
+        "fde_nm": 2.4121535139993675,
+        "risk_auprc": 0.5193053515748614,
+        "risk_positive_rate": 0.09574468085106383,
+        "risk_brier": 0.06260711699724197,
+        "risk_ece": 0.02566612729842358,
+        "moderate_risk_auprc": 0.587789306540755,
+        "moderate_risk_brier": 0.08778820186853409,
+        "moderate_risk_ece": 0.054911769715184015
+      }
+    },
+    {
+      "date": "2025-07-02",
+      "month": 7,
+      "stratum": "weekday_1",
+      "n_scenes": 209,
+      "node_samples": 555,
+      "metrics": {
+        "loss": 0.09367952462923419,
+        "ade_nm": 1.0034623767260782,
+        "fde_nm": 1.8360722003726186,
+        "risk_auprc": 0.7449448525494738,
+        "risk_positive_rate": 0.0701468189233279,
+        "risk_brier": 0.030423881486058235,
+        "risk_ece": 0.034598260100013274,
+        "moderate_risk_auprc": 0.7217907191060247,
+        "moderate_risk_brier": 0.060964811593294144,
+        "moderate_risk_ece": 0.03928691636145018
+      }
+    },
+    {
+      "date": "2025-07-13",
+      "month": 7,
+      "stratum": "weekend_2",
+      "n_scenes": 574,
+      "node_samples": 1494,
+      "metrics": {
+        "loss": 0.12788115174994572,
+        "ade_nm": 1.338399087711537,
+        "fde_nm": 2.4911872562243214,
+        "risk_auprc": 0.5822387107907552,
+        "risk_positive_rate": 0.07165706973768395,
+        "risk_brier": 0.04337887093424797,
+        "risk_ece": 0.018789585290079847,
+        "moderate_risk_auprc": 0.7028356149044463,
+        "moderate_risk_brier": 0.08238095045089722,
+        "moderate_risk_ece": 0.026086296034131918
+      }
+    },
+    {
+      "date": "2025-07-16",
+      "month": 7,
+      "stratum": "weekday_3",
+      "n_scenes": 404,
+      "node_samples": 1086,
+      "metrics": {
+        "loss": 0.1229882825982395,
+        "ade_nm": 1.0365032986587592,
+        "fde_nm": 1.8473871028508326,
+        "risk_auprc": 0.6525392530609512,
+        "risk_positive_rate": 0.09414556962025317,
+        "risk_brier": 0.05214928835630417,
+        "risk_ece": 0.019169646468532236,
+        "moderate_risk_auprc": 0.7562186873640506,
+        "moderate_risk_brier": 0.10003639757633209,
+        "moderate_risk_ece": 0.03252365181953469
+      }
+    },
+    {
+      "date": "2025-07-27",
+      "month": 7,
+      "stratum": "weekend_4",
+      "n_scenes": 302,
+      "node_samples": 736,
+      "metrics": {
+        "loss": 0.12107685971600206,
+        "ade_nm": 1.2305645660439557,
+        "fde_nm": 2.2142377887961895,
+        "risk_auprc": 0.6148169662078316,
+        "risk_positive_rate": 0.07379518072289157,
+        "risk_brier": 0.039717912673950195,
+        "risk_ece": 0.025212536605232094,
+        "moderate_risk_auprc": 0.688522808869458,
+        "moderate_risk_brier": 0.069718137383461,
+        "moderate_risk_ece": 0.029666855086920317
+      }
+    },
+    {
+      "date": "2025-08-06",
+      "month": 8,
+      "stratum": "weekday_1",
+      "n_scenes": 771,
+      "node_samples": 2343,
+      "metrics": {
+        "loss": 0.11966399330132241,
+        "ade_nm": 1.0485746643629585,
+        "fde_nm": 1.889975024189166,
+        "risk_auprc": 0.5245278762671255,
+        "risk_positive_rate": 0.0746041412911084,
+        "risk_brier": 0.04860041290521622,
+        "risk_ece": 0.00994840011241121,
+        "moderate_risk_auprc": 0.60058419080389,
+        "moderate_risk_brier": 0.08923020213842392,
+        "moderate_risk_ece": 0.016061455747577728
+      }
+    },
+    {
+      "date": "2025-08-10",
+      "month": 8,
+      "stratum": "weekend_2",
+      "n_scenes": 406,
+      "node_samples": 1093,
+      "metrics": {
+        "loss": 0.13016352489631544,
+        "ade_nm": 1.0433987913629306,
+        "fde_nm": 1.9170895988659424,
+        "risk_auprc": 0.6286525627944597,
+        "risk_positive_rate": 0.10147441457068516,
+        "risk_brier": 0.0582873560488224,
+        "risk_ece": 0.01722306232489096,
+        "moderate_risk_auprc": 0.7150958724742953,
+        "moderate_risk_brier": 0.08046399801969528,
+        "moderate_risk_ece": 0.019361076527578045
+      }
+    },
+    {
+      "date": "2025-08-20",
+      "month": 8,
+      "stratum": "weekday_3",
+      "n_scenes": 227,
+      "node_samples": 570,
+      "metrics": {
+        "loss": 0.14818265130906774,
+        "ade_nm": 1.118728708117824,
+        "fde_nm": 1.9796467645664004,
+        "risk_auprc": 0.6290602329353862,
+        "risk_positive_rate": 0.11666666666666667,
+        "risk_brier": 0.06557327508926392,
+        "risk_ece": 0.020498782982704813,
+        "moderate_risk_auprc": 0.7572827109695711,
+        "moderate_risk_brier": 0.10097262263298035,
+        "moderate_risk_ece": 0.030378544399583783
+      }
+    },
+    {
+      "date": "2025-08-24",
+      "month": 8,
+      "stratum": "weekend_4",
+      "n_scenes": 306,
+      "node_samples": 779,
+      "metrics": {
+        "loss": 0.12264288322514685,
+        "ade_nm": 1.10332661232095,
+        "fde_nm": 2.0111157011242056,
+        "risk_auprc": 0.33024993427737426,
+        "risk_positive_rate": 0.0682110682110682,
+        "risk_brier": 0.05417497083544731,
+        "risk_ece": 0.02375259342935401,
+        "moderate_risk_auprc": 0.473931248172344,
+        "moderate_risk_brier": 0.08612360060214996,
+        "moderate_risk_ece": 0.030287263656042257
+      }
+    },
+    {
+      "date": "2025-09-03",
+      "month": 9,
+      "stratum": "weekday_1",
+      "n_scenes": 207,
+      "node_samples": 533,
+      "metrics": {
+        "loss": 0.11039139300333178,
+        "ade_nm": 1.1833267843731978,
+        "fde_nm": 2.131956597552871,
+        "risk_auprc": 0.5719662728446967,
+        "risk_positive_rate": 0.058519793459552494,
+        "risk_brier": 0.03725985810160637,
+        "risk_ece": 0.01764633651444506,
+        "moderate_risk_auprc": 0.6310092890216297,
+        "moderate_risk_brier": 0.06550121307373047,
+        "moderate_risk_ece": 0.031312573367726575
+      }
+    },
+    {
+      "date": "2025-09-14",
+      "month": 9,
+      "stratum": "weekend_2",
+      "n_scenes": 552,
+      "node_samples": 1694,
+      "metrics": {
+        "loss": 0.13316546313227137,
+        "ade_nm": 1.1716738567607328,
+        "fde_nm": 2.1476257120799875,
+        "risk_auprc": 0.6358357370557585,
+        "risk_positive_rate": 0.08553157474020784,
+        "risk_brier": 0.048919446766376495,
+        "risk_ece": 0.01448443109433142,
+        "moderate_risk_auprc": 0.6998756094974037,
+        "moderate_risk_brier": 0.08529990911483765,
+        "moderate_risk_ece": 0.02530001944599511
+      }
+    },
+    {
+      "date": "2025-09-17",
+      "month": 9,
+      "stratum": "weekday_3",
+      "n_scenes": 642,
+      "node_samples": 2631,
+      "metrics": {
+        "loss": 0.1279626354796041,
+        "ade_nm": 1.1069339581111732,
+        "fde_nm": 1.985360767329463,
+        "risk_auprc": 0.6088325241101221,
+        "risk_positive_rate": 0.08361372812920592,
+        "risk_brier": 0.04887062683701515,
+        "risk_ece": 0.008233767262287688,
+        "moderate_risk_auprc": 0.6806493566364484,
+        "moderate_risk_brier": 0.08491172641515732,
+        "moderate_risk_ece": 0.017919028339554048
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "month": 9,
+      "stratum": "weekend_4",
+      "n_scenes": 173,
+      "node_samples": 457,
+      "metrics": {
+        "loss": 0.13714033288624405,
+        "ade_nm": 1.1101754583922125,
+        "fde_nm": 1.9758808525350795,
+        "risk_auprc": 0.7302930462081306,
+        "risk_positive_rate": 0.10574712643678161,
+        "risk_brier": 0.04943905025720596,
+        "risk_ece": 0.03170223467308899,
+        "moderate_risk_auprc": 0.7122870481517535,
+        "moderate_risk_brier": 0.09664139896631241,
+        "moderate_risk_ece": 0.02195149297001718
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "month": 10,
+      "stratum": "weekday_1",
+      "n_scenes": 190,
+      "node_samples": 612,
+      "metrics": {
+        "loss": 0.14721829250600993,
+        "ade_nm": 1.170363098893265,
+        "fde_nm": 2.0266666810037552,
+        "risk_auprc": 0.7092852809514391,
+        "risk_positive_rate": 0.12302839116719243,
+        "risk_brier": 0.059822965413331985,
+        "risk_ece": 0.029619864960809233,
+        "moderate_risk_auprc": 0.765185726314962,
+        "moderate_risk_brier": 0.09863708168268204,
+        "moderate_risk_ece": 0.049619255763734174
+      }
+    },
+    {
+      "date": "2025-10-12",
+      "month": 10,
+      "stratum": "weekend_2",
+      "n_scenes": 178,
+      "node_samples": 410,
+      "metrics": {
+        "loss": 0.19726735484309313,
+        "ade_nm": 1.14544471808109,
+        "fde_nm": 1.9389615667636833,
+        "risk_auprc": 0.8197332232573884,
+        "risk_positive_rate": 0.292358803986711,
+        "risk_brier": 0.10857471078634262,
+        "risk_ece": 0.06015104075206871,
+        "moderate_risk_auprc": 0.8307950760331247,
+        "moderate_risk_brier": 0.11673338711261749,
+        "moderate_risk_ece": 0.035789764179937865
+      }
+    },
+    {
+      "date": "2025-10-15",
+      "month": 10,
+      "stratum": "weekday_3",
+      "n_scenes": 261,
+      "node_samples": 827,
+      "metrics": {
+        "loss": 0.14628132477745034,
+        "ade_nm": 1.1019114499407157,
+        "fde_nm": 1.9962551489116964,
+        "risk_auprc": 0.6916606616347086,
+        "risk_positive_rate": 0.1137546468401487,
+        "risk_brier": 0.05667567625641823,
+        "risk_ece": 0.016149701479974733,
+        "moderate_risk_auprc": 0.738668979014842,
+        "moderate_risk_brier": 0.09952333569526672,
+        "moderate_risk_ece": 0.040193985433051124
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "month": 10,
+      "stratum": "weekend_4",
+      "n_scenes": 766,
+      "node_samples": 2255,
+      "metrics": {
+        "loss": 0.11858636726296926,
+        "ade_nm": 1.1488601119781814,
+        "fde_nm": 2.1108757895820665,
+        "risk_auprc": 0.6090746453240992,
+        "risk_positive_rate": 0.07644762524398178,
+        "risk_brier": 0.04510197415947914,
+        "risk_ece": 0.008171112869824382,
+        "moderate_risk_auprc": 0.6581852477920397,
+        "moderate_risk_brier": 0.07562737166881561,
+        "moderate_risk_ece": 0.012897927343733871
+      }
+    },
+    {
+      "date": "2025-11-05",
+      "month": 11,
+      "stratum": "weekday_1",
+      "n_scenes": 805,
+      "node_samples": 2403,
+      "metrics": {
+        "loss": 0.14480821937136584,
+        "ade_nm": 1.142669494680126,
+        "fde_nm": 2.0899325306433347,
+        "risk_auprc": 0.7003035938834595,
+        "risk_positive_rate": 0.12034632034632034,
+        "risk_brier": 0.0625399798154831,
+        "risk_ece": 0.027915001593927975,
+        "moderate_risk_auprc": 0.7365153032808496,
+        "moderate_risk_brier": 0.08714868873357773,
+        "moderate_risk_ece": 0.022015584678984478
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "month": 11,
+      "stratum": "weekend_2",
+      "n_scenes": 236,
+      "node_samples": 541,
+      "metrics": {
+        "loss": 0.1510967495343381,
+        "ade_nm": 1.1644602523757435,
+        "fde_nm": 2.165340725780293,
+        "risk_auprc": 0.6031541729016119,
+        "risk_positive_rate": 0.12128712871287128,
+        "risk_brier": 0.07236259430646896,
+        "risk_ece": 0.03697933276912364,
+        "moderate_risk_auprc": 0.7861009466104956,
+        "moderate_risk_brier": 0.09703243523836136,
+        "moderate_risk_ece": 0.037735517247404794
+      }
+    },
+    {
+      "date": "2025-11-19",
+      "month": 11,
+      "stratum": "weekday_3",
+      "n_scenes": 178,
+      "node_samples": 464,
+      "metrics": {
+        "loss": 0.16206821755923587,
+        "ade_nm": 0.9701396517588938,
+        "fde_nm": 1.7907529379061313,
+        "risk_auprc": 0.599914374801919,
+        "risk_positive_rate": 0.14350797266514806,
+        "risk_brier": 0.08441304415464401,
+        "risk_ece": 0.02525210487051678,
+        "moderate_risk_auprc": 0.7369291952480092,
+        "moderate_risk_brier": 0.1076083704829216,
+        "moderate_risk_ece": 0.03474815463082937
+      }
+    },
+    {
+      "date": "2025-11-23",
+      "month": 11,
+      "stratum": "weekend_4",
+      "n_scenes": 67,
+      "node_samples": 139,
+      "metrics": {
+        "loss": 0.14830089065668395,
+        "ade_nm": 1.1327848375322422,
+        "fde_nm": 2.1542195475531023,
+        "risk_auprc": 0.8470818070818069,
+        "risk_positive_rate": 0.16883116883116883,
+        "risk_brier": 0.06829212605953217,
+        "risk_ece": 0.07978827762719873,
+        "moderate_risk_auprc": 0.8282947574945658,
+        "moderate_risk_brier": 0.09515534341335297,
+        "moderate_risk_ece": 0.0787417380647226
+      }
+    },
+    {
+      "date": "2025-12-03",
+      "month": 12,
+      "stratum": "weekday_1",
+      "n_scenes": 523,
+      "node_samples": 1831,
+      "metrics": {
+        "loss": 0.1320782790274844,
+        "ade_nm": 1.1052208182370535,
+        "fde_nm": 2.018418372413604,
+        "risk_auprc": 0.5801287115294634,
+        "risk_positive_rate": 0.08257686676427525,
+        "risk_brier": 0.048854511231184006,
+        "risk_ece": 0.015374102162559947,
+        "moderate_risk_auprc": 0.6965066277242192,
+        "moderate_risk_brier": 0.08225792646408081,
+        "moderate_risk_ece": 0.02340754221955731
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "month": 12,
+      "stratum": "weekend_2",
+      "n_scenes": 324,
+      "node_samples": 793,
+      "metrics": {
+        "loss": 0.14095381204823376,
+        "ade_nm": 1.014696114072854,
+        "fde_nm": 1.8418287019383972,
+        "risk_auprc": 0.751277637167201,
+        "risk_positive_rate": 0.1476121562952243,
+        "risk_brier": 0.06410975009202957,
+        "risk_ece": 0.03766936722026892,
+        "moderate_risk_auprc": 0.8141862507517802,
+        "moderate_risk_brier": 0.0853312611579895,
+        "moderate_risk_ece": 0.03973185250538303
+      }
+    },
+    {
+      "date": "2025-12-17",
+      "month": 12,
+      "stratum": "weekday_3",
+      "n_scenes": 896,
+      "node_samples": 2968,
+      "metrics": {
+        "loss": 0.1329871747389215,
+        "ade_nm": 1.090841667976535,
+        "fde_nm": 1.9735771999510254,
+        "risk_auprc": 0.5873067576400083,
+        "risk_positive_rate": 0.08898137138327387,
+        "risk_brier": 0.05336318537592888,
+        "risk_ece": 0.01443366298553162,
+        "moderate_risk_auprc": 0.6688890841941608,
+        "moderate_risk_brier": 0.08602187037467957,
+        "moderate_risk_ece": 0.018678167421449003
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "month": 12,
+      "stratum": "weekend_4",
+      "n_scenes": 491,
+      "node_samples": 1231,
+      "metrics": {
+        "loss": 0.1610988991094449,
+        "ade_nm": 1.1383470343899704,
+        "fde_nm": 2.0876803588958213,
+        "risk_auprc": 0.7330132433155597,
+        "risk_positive_rate": 0.16712079927338783,
+        "risk_brier": 0.07763470709323883,
+        "risk_ece": 0.03619937158336053,
+        "moderate_risk_auprc": 0.79882310154025,
+        "moderate_risk_brier": 0.09997730702161789,
+        "moderate_risk_ece": 0.016193065939506642
+      }
+    }
+  ],
+  "eval_seconds": 51.4
+}

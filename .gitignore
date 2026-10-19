@@ -1,0 +1,29 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data and derived scenes (see DATA.md)
+/data/
+*.csv.zst
+*.parquet
+/regional_*/
+
+# Local run output (root-level only: results/**/runs/ is archived)
+/runs/
+/work/
+/logs/
+*.log
+torchinductor_*/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

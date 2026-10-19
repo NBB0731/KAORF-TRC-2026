@@ -1,0 +1,731 @@
+{
+  "ports": [
+    "new_york",
+    "new_orleans",
+    "houston_galveston",
+    "chesapeake",
+    "los_angeles",
+    "san_francisco",
+    "miami"
+  ],
+  "per_day": {
+    "2025-01-12": {
+      "new_york": {
+        "scenes": 81,
+        "rows": 203999,
+        "vessels": 326,
+        "moving_vessels": 247,
+        "anchors": 278,
+        "anchors_ge2cand": 46,
+        "moving_points": 59718
+      },
+      "new_orleans": {
+        "scenes": 0,
+        "rows": 391032,
+        "vessels": 893,
+        "moving_vessels": 600,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 88266
+      },
+      "houston_galveston": {
+        "scenes": 6,
+        "rows": 481480,
+        "vessels": 859,
+        "moving_vessels": 664,
+        "anchors": 278,
+        "anchors_ge2cand": 6,
+        "moving_points": 134668
+      },
+      "chesapeake": {
+        "scenes": 2,
+        "rows": 226456,
+        "vessels": 457,
+        "moving_vessels": 206,
+        "anchors": 278,
+        "anchors_ge2cand": 1,
+        "moving_points": 41616
+      },
+      "los_angeles": {
+        "scenes": 2,
+        "rows": 149367,
+        "vessels": 486,
+        "moving_vessels": 230,
+        "anchors": 278,
+        "anchors_ge2cand": 1,
+        "moving_points": 19101
+      },
+      "san_francisco": {
+        "scenes": 0,
+        "rows": 103106,
+        "vessels": 376,
+        "moving_vessels": 239,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 22432
+      },
+      "miami": {
+        "scenes": 0,
+        "rows": 190507,
+        "vessels": 813,
+        "moving_vessels": 432,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 29093
+      }
+    },
+    "2025-02-09": {
+      "new_york": {
+        "scenes": 0,
+        "rows": 165814,
+        "vessels": 307,
+        "moving_vessels": 222,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 40902
+      },
+      "new_orleans": {
+        "scenes": 0,
+        "rows": 462972,
+        "vessels": 855,
+        "moving_vessels": 604,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 82012
+      },
+      "houston_galveston": {
+        "scenes": 0,
+        "rows": 540299,
+        "vessels": 931,
+        "moving_vessels": 704,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 132768
+      },
+      "chesapeake": {
+        "scenes": 0,
+        "rows": 211662,
+        "vessels": 471,
+        "moving_vessels": 190,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 37328
+      },
+      "los_angeles": {
+        "scenes": 0,
+        "rows": 159682,
+        "vessels": 497,
+        "moving_vessels": 235,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 19941
+      },
+      "san_francisco": {
+        "scenes": 0,
+        "rows": 106370,
+        "vessels": 345,
+        "moving_vessels": 226,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 21261
+      },
+      "miami": {
+        "scenes": 0,
+        "rows": 236706,
+        "vessels": 875,
+        "moving_vessels": 483,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 36025
+      }
+    },
+    "2025-03-09": {
+      "new_york": {
+        "scenes": 5,
+        "rows": 161985,
+        "vessels": 331,
+        "moving_vessels": 238,
+        "anchors": 278,
+        "anchors_ge2cand": 2,
+        "moving_points": 46587
+      },
+      "new_orleans": {
+        "scenes": 0,
+        "rows": 438416,
+        "vessels": 878,
+        "moving_vessels": 634,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 89627
+      },
+      "houston_galveston": {
+        "scenes": 0,
+        "rows": 511544,
+        "vessels": 872,
+        "moving_vessels": 666,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 103391
+      },
+      "chesapeake": {
+        "scenes": 0,
+        "rows": 226618,
+        "vessels": 553,
+        "moving_vessels": 277,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 51405
+      },
+      "los_angeles": {
+        "scenes": 0,
+        "rows": 164269,
+        "vessels": 559,
+        "moving_vessels": 321,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 29109
+      },
+      "san_francisco": {
+        "scenes": 0,
+        "rows": 114071,
+        "vessels": 413,
+        "moving_vessels": 288,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 29615
+      },
+      "miami": {
+        "scenes": 0,
+        "rows": 228753,
+        "vessels": 894,
+        "moving_vessels": 509,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 39466
+      }
+    },
+    "2025-04-13": {
+      "new_york": {
+        "scenes": 0,
+        "rows": 195395,
+        "vessels": 383,
+        "moving_vessels": 273,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 49904
+      },
+      "new_orleans": {
+        "scenes": 0,
+        "rows": 475448,
+        "vessels": 916,
+        "moving_vessels": 701,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 115725
+      },
+      "houston_galveston": {
+        "scenes": 0,
+        "rows": 506519,
+        "vessels": 877,
+        "moving_vessels": 649,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 133135
+      },
+      "chesapeake": {
+        "scenes": 0,
+        "rows": 261714,
+        "vessels": 680,
+        "moving_vessels": 368,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 59724
+      },
+      "los_angeles": {
+        "scenes": 0,
+        "rows": 121885,
+        "vessels": 552,
+        "moving_vessels": 307,
+        "anchors": 278,
+        "anchors_ge2cand": 1,
+        "moving_points": 26085
+      },
+      "san_francisco": {
+        "scenes": 0,
+        "rows": 123342,
+        "vessels": 438,
+        "moving_vessels": 301,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 32875
+      },
+      "miami": {
+        "scenes": 0,
+        "rows": 246433,
+        "vessels": 875,
+        "moving_vessels": 486,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 38088
+      }
+    },
+    "2025-05-11": {
+      "new_york": {
+        "scenes": 36,
+        "rows": 227446,
+        "vessels": 549,
+        "moving_vessels": 439,
+        "anchors": 278,
+        "anchors_ge2cand": 20,
+        "moving_points": 72401
+      },
+      "new_orleans": {
+        "scenes": 0,
+        "rows": 496368,
+        "vessels": 954,
+        "moving_vessels": 762,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 119393
+      },
+      "houston_galveston": {
+        "scenes": 2,
+        "rows": 557265,
+        "vessels": 885,
+        "moving_vessels": 653,
+        "anchors": 278,
+        "anchors_ge2cand": 4,
+        "moving_points": 130610
+      },
+      "chesapeake": {
+        "scenes": 0,
+        "rows": 372272,
+        "vessels": 1253,
+        "moving_vessels": 852,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 128398
+      },
+      "los_angeles": {
+        "scenes": 0,
+        "rows": 175241,
+        "vessels": 652,
+        "moving_vessels": 391,
+        "anchors": 278,
+        "anchors_ge2cand": 1,
+        "moving_points": 35148
+      },
+      "san_francisco": {
+        "scenes": 2,
+        "rows": 126518,
+        "vessels": 388,
+        "moving_vessels": 253,
+        "anchors": 278,
+        "anchors_ge2cand": 3,
+        "moving_points": 28100
+      },
+      "miami": {
+        "scenes": 4,
+        "rows": 252040,
+        "vessels": 795,
+        "moving_vessels": 385,
+        "anchors": 278,
+        "anchors_ge2cand": 2,
+        "moving_points": 32251
+      }
+    },
+    "2025-06-08": {
+      "new_york": {
+        "scenes": 45,
+        "rows": 271939,
+        "vessels": 706,
+        "moving_vessels": 588,
+        "anchors": 278,
+        "anchors_ge2cand": 26,
+        "moving_points": 90829
+      },
+      "new_orleans": {
+        "scenes": 14,
+        "rows": 547757,
+        "vessels": 887,
+        "moving_vessels": 669,
+        "anchors": 278,
+        "anchors_ge2cand": 11,
+        "moving_points": 127348
+      },
+      "houston_galveston": {
+        "scenes": 19,
+        "rows": 540658,
+        "vessels": 840,
+        "moving_vessels": 622,
+        "anchors": 278,
+        "anchors_ge2cand": 24,
+        "moving_points": 136260
+      },
+      "chesapeake": {
+        "scenes": 0,
+        "rows": 401816,
+        "vessels": 1279,
+        "moving_vessels": 841,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 145624
+      },
+      "los_angeles": {
+        "scenes": 10,
+        "rows": 181890,
+        "vessels": 655,
+        "moving_vessels": 399,
+        "anchors": 278,
+        "anchors_ge2cand": 13,
+        "moving_points": 44657
+      },
+      "san_francisco": {
+        "scenes": 0,
+        "rows": 130893,
+        "vessels": 444,
+        "moving_vessels": 318,
+        "anchors": 278,
+        "anchors_ge2cand": 3,
+        "moving_points": 40208
+      },
+      "miami": {
+        "scenes": 0,
+        "rows": 212121,
+        "vessels": 709,
+        "moving_vessels": 364,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 29647
+      }
+    },
+    "2025-07-13": {
+      "new_york": {
+        "scenes": 69,
+        "rows": 263004,
+        "vessels": 723,
+        "moving_vessels": 580,
+        "anchors": 278,
+        "anchors_ge2cand": 33,
+        "moving_points": 85010
+      },
+      "new_orleans": {
+        "scenes": 7,
+        "rows": 500165,
+        "vessels": 886,
+        "moving_vessels": 668,
+        "anchors": 278,
+        "anchors_ge2cand": 12,
+        "moving_points": 110898
+      },
+      "houston_galveston": {
+        "scenes": 18,
+        "rows": 533499,
+        "vessels": 864,
+        "moving_vessels": 628,
+        "anchors": 278,
+        "anchors_ge2cand": 28,
+        "moving_points": 132652
+      },
+      "chesapeake": {
+        "scenes": 0,
+        "rows": 347973,
+        "vessels": 1144,
+        "moving_vessels": 739,
+        "anchors": 278,
+        "anchors_ge2cand": 2,
+        "moving_points": 96542
+      },
+      "los_angeles": {
+        "scenes": 6,
+        "rows": 193938,
+        "vessels": 714,
+        "moving_vessels": 452,
+        "anchors": 278,
+        "anchors_ge2cand": 7,
+        "moving_points": 46049
+      },
+      "san_francisco": {
+        "scenes": 0,
+        "rows": 120893,
+        "vessels": 418,
+        "moving_vessels": 284,
+        "anchors": 278,
+        "anchors_ge2cand": 2,
+        "moving_points": 34367
+      },
+      "miami": {
+        "scenes": 0,
+        "rows": 189470,
+        "vessels": 610,
+        "moving_vessels": 328,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 26860
+      }
+    },
+    "2025-08-10": {
+      "error": "transient HTTP 524 while probing a remote AIS chunk (2026-09-14); no data retained"
+    },
+    "2025-09-14": {
+      "new_york": {
+        "scenes": 17,
+        "rows": 246114,
+        "vessels": 730,
+        "moving_vessels": 586,
+        "anchors": 278,
+        "anchors_ge2cand": 10,
+        "moving_points": 82385
+      },
+      "new_orleans": {
+        "scenes": 0,
+        "rows": 436567,
+        "vessels": 839,
+        "moving_vessels": 625,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 96100
+      },
+      "houston_galveston": {
+        "scenes": 6,
+        "rows": 533043,
+        "vessels": 862,
+        "moving_vessels": 617,
+        "anchors": 278,
+        "anchors_ge2cand": 16,
+        "moving_points": 127329
+      },
+      "chesapeake": {
+        "scenes": 2,
+        "rows": 374196,
+        "vessels": 1391,
+        "moving_vessels": 928,
+        "anchors": 278,
+        "anchors_ge2cand": 3,
+        "moving_points": 112725
+      },
+      "los_angeles": {
+        "scenes": 0,
+        "rows": 167612,
+        "vessels": 760,
+        "moving_vessels": 500,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 32326
+      },
+      "san_francisco": {
+        "scenes": 0,
+        "rows": 124566,
+        "vessels": 479,
+        "moving_vessels": 332,
+        "anchors": 278,
+        "anchors_ge2cand": 8,
+        "moving_points": 38933
+      },
+      "miami": {
+        "scenes": 0,
+        "rows": 206601,
+        "vessels": 678,
+        "moving_vessels": 331,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 25234
+      }
+    },
+    "2025-10-12": {
+      "new_york": {
+        "scenes": 36,
+        "rows": 220523,
+        "vessels": 474,
+        "moving_vessels": 306,
+        "anchors": 278,
+        "anchors_ge2cand": 13,
+        "moving_points": 46265
+      },
+      "new_orleans": {
+        "scenes": 0,
+        "rows": 482421,
+        "vessels": 839,
+        "moving_vessels": 622,
+        "anchors": 278,
+        "anchors_ge2cand": 3,
+        "moving_points": 114381
+      },
+      "houston_galveston": {
+        "scenes": 0,
+        "rows": 459280,
+        "vessels": 859,
+        "moving_vessels": 633,
+        "anchors": 278,
+        "anchors_ge2cand": 4,
+        "moving_points": 132088
+      },
+      "chesapeake": {
+        "scenes": 0,
+        "rows": 322431,
+        "vessels": 942,
+        "moving_vessels": 352,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 30541
+      },
+      "los_angeles": {
+        "scenes": 0,
+        "rows": 139600,
+        "vessels": 650,
+        "moving_vessels": 378,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 23214
+      },
+      "san_francisco": {
+        "scenes": 0,
+        "rows": 141932,
+        "vessels": 556,
+        "moving_vessels": 424,
+        "anchors": 278,
+        "anchors_ge2cand": 1,
+        "moving_points": 46580
+      },
+      "miami": {
+        "scenes": 0,
+        "rows": 226137,
+        "vessels": 770,
+        "moving_vessels": 392,
+        "anchors": 278,
+        "anchors_ge2cand": 3,
+        "moving_points": 31008
+      }
+    },
+    "2025-11-09": {
+      "new_york": {
+        "scenes": 2,
+        "rows": 210866,
+        "vessels": 433,
+        "moving_vessels": 317,
+        "anchors": 278,
+        "anchors_ge2cand": 1,
+        "moving_points": 60019
+      },
+      "new_orleans": {
+        "scenes": 0,
+        "rows": 492948,
+        "vessels": 862,
+        "moving_vessels": 642,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 118871
+      },
+      "houston_galveston": {
+        "scenes": 2,
+        "rows": 525435,
+        "vessels": 854,
+        "moving_vessels": 613,
+        "anchors": 278,
+        "anchors_ge2cand": 2,
+        "moving_points": 97737
+      },
+      "chesapeake": {
+        "scenes": 0,
+        "rows": 294837,
+        "vessels": 920,
+        "moving_vessels": 530,
+        "anchors": 278,
+        "anchors_ge2cand": 3,
+        "moving_points": 77401
+      },
+      "los_angeles": {
+        "scenes": 0,
+        "rows": 179048,
+        "vessels": 633,
+        "moving_vessels": 353,
+        "anchors": 278,
+        "anchors_ge2cand": 1,
+        "moving_points": 30051
+      },
+      "san_francisco": {
+        "scenes": 0,
+        "rows": 133875,
+        "vessels": 453,
+        "moving_vessels": 325,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 37492
+      },
+      "miami": {
+        "scenes": 0,
+        "rows": 248175,
+        "vessels": 885,
+        "moving_vessels": 497,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 38249
+      }
+    },
+    "2025-12-14": {
+      "new_york": {
+        "scenes": 94,
+        "rows": 153611,
+        "vessels": 328,
+        "moving_vessels": 227,
+        "anchors": 278,
+        "anchors_ge2cand": 47,
+        "moving_points": 43225
+      },
+      "new_orleans": {
+        "scenes": 296,
+        "rows": 564671,
+        "vessels": 881,
+        "moving_vessels": 627,
+        "anchors": 278,
+        "anchors_ge2cand": 76,
+        "moving_points": 122547
+      },
+      "houston_galveston": {
+        "scenes": 55,
+        "rows": 555508,
+        "vessels": 831,
+        "moving_vessels": 643,
+        "anchors": 278,
+        "anchors_ge2cand": 54,
+        "moving_points": 133778
+      },
+      "chesapeake": {
+        "scenes": 2,
+        "rows": 188265,
+        "vessels": 536,
+        "moving_vessels": 233,
+        "anchors": 278,
+        "anchors_ge2cand": 8,
+        "moving_points": 32857
+      },
+      "los_angeles": {
+        "scenes": 6,
+        "rows": 190938,
+        "vessels": 625,
+        "moving_vessels": 343,
+        "anchors": 278,
+        "anchors_ge2cand": 3,
+        "moving_points": 35362
+      },
+      "san_francisco": {
+        "scenes": 17,
+        "rows": 130185,
+        "vessels": 379,
+        "moving_vessels": 257,
+        "anchors": 278,
+        "anchors_ge2cand": 16,
+        "moving_points": 33019
+      },
+      "miami": {
+        "scenes": 0,
+        "rows": 256590,
+        "vessels": 868,
+        "moving_vessels": 472,
+        "anchors": 278,
+        "anchors_ge2cand": 0,
+        "moving_points": 37367
+      }
+    }
+  }
+}

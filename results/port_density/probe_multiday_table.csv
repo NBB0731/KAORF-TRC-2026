@@ -1,0 +1,8 @@
+port,days,scenes_sum,scenes_mean,scenes_median,scenes_max,zero_days,ge2_sum,moving_vessels_mean
+new_york,11,385,35.0,36,94,2,198,365.7
+new_orleans,11,317,28.82,0,296,8,102,650.4
+houston_galveston,11,108,9.82,2,55,4,138,644.7
+chesapeake,11,6,0.55,0,2,8,17,501.5
+los_angeles,11,24,2.18,0,10,7,27,355.4
+san_francisco,11,19,1.73,0,17,9,33,295.2
+miami,11,4,0.36,0,4,10,5,425.4

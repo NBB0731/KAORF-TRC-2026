@@ -1,0 +1,12 @@
+numpy>=2.0
+scipy>=1.13
+pandas>=2.2
+polars>=1.20
+pyarrow>=18
+zstandard>=0.23
+pyyaml>=6.0
+scikit-learn>=1.5
+torch>=2.5
+torch-geometric>=2.6
+tqdm>=4.66
+tensorboard>=2.18

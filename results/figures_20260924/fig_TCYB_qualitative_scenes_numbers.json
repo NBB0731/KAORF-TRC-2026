@@ -1,0 +1,40 @@
+{
+  "date": "2025-11-05",
+  "checkpoint": "runs\\seed_17\\constrained_feedback\\best.pt",
+  "date_ade_nm_seed17_feedback": 0.8173909783363342,
+  "panels": {
+    "a": {
+      "scene_row": 650,
+      "vessel_pair": [
+        0,
+        7
+      ],
+      "anchor_dist_nm": 0.06409401446580887,
+      "future_min_nm": 0.026216426864266396,
+      "p_severe": 0.9936932325363159,
+      "label_close": 1
+    },
+    "b": {
+      "scene_row": 4,
+      "vessel_pair": [
+        2,
+        7
+      ],
+      "anchor_dist_nm": 3.7364673614501953,
+      "future_min_nm": 0.1906883418560028,
+      "p_severe": 0.0013217654777690768,
+      "label_close": 1
+    },
+    "c": {
+      "scene_row": 355,
+      "vessel_pair": [
+        4,
+        7
+      ],
+      "anchor_dist_nm": 12.394672393798828,
+      "future_min_nm": 11.792990684509277,
+      "p_severe": 4.7085723764439535e-08,
+      "label_close": 0
+    }
+  }
+}

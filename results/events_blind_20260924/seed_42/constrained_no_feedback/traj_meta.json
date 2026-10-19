@@ -1,0 +1,53 @@
+{
+  "seed": 42,
+  "variant": "constrained_no_feedback",
+  "checkpoint": "checkpoints/seed_42/constrained_no_feedback/best.pt",
+  "checkpoint_sha256": "de36c2b2a4a49d3577631eaf823c7d87dec37381bae6bb23ddcf16ad65f78e66",
+  "blind_dates": [
+    "2025-11-05",
+    "2025-11-09",
+    "2025-11-19",
+    "2025-11-23",
+    "2025-12-03",
+    "2025-12-14",
+    "2025-12-17",
+    "2025-12-28"
+  ],
+  "horizons_min": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30
+  ],
+  "recomputed_ade_nm": 0.8923519253730774,
+  "recomputed_fde_nm": 1.445215106010437,
+  "guard": {
+    "n_scenes": 12103,
+    "n_nodes": 89077,
+    "per_horizon_ade_nm": [
+      0.3292955756187439,
+      0.5613439083099365,
+      0.7832988500595093,
+      1.0028876066207886,
+      1.2320706844329834,
+      1.445215106010437
+    ],
+    "archived_deltas": {
+      "ade_nm": {
+        "recomputed": 0.8923519253730774,
+        "archived": 0.8923648255249669,
+        "abs": 1.2900151889483347e-05,
+        "rel": 1.4456141166136117e-05
+      },
+      "fde_nm": {
+        "recomputed": 1.445215106010437,
+        "archived": 1.445237702867506,
+        "abs": 2.259685706906822e-05,
+        "rel": 1.56353913437448e-05
+      }
+    }
+  },
+  "seconds": 12.3
+}

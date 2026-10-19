@@ -1,0 +1,3690 @@
+{
+  "analysis": "F6 post-hoc calibration fitted on validation, evaluated on blind",
+  "protocol": {
+    "fit_split": "NY validation 2025-09..2025-10 (8 dates)",
+    "eval_split": "NY blind 2025-11..2025-12 (8 dates), F4 event log reused",
+    "new_blind_forward_pass": false,
+    "per_model_maps": true,
+    "ece_binning": "locked 10-bin (dump_event_log.aggregate)"
+  },
+  "seeds": [
+    17,
+    29,
+    42,
+    71,
+    101,
+    131,
+    211,
+    307,
+    509,
+    887
+  ],
+  "variants": [
+    "constrained_feedback",
+    "constrained_no_feedback"
+  ],
+  "mean_blind_ece": {
+    "constrained_feedback/severe/raw": 0.007196843920889649,
+    "constrained_feedback/severe/temperature": 0.008348964760601835,
+    "constrained_feedback/severe/platt": 0.006454874821238693,
+    "constrained_feedback/severe/isotonic": 0.006393337469174467,
+    "constrained_feedback/moderate/raw": 0.016017016964650653,
+    "constrained_feedback/moderate/temperature": 0.011202903869548217,
+    "constrained_feedback/moderate/platt": 0.010633870689636771,
+    "constrained_feedback/moderate/isotonic": 0.006953983273873603,
+    "constrained_no_feedback/severe/raw": 0.007416839558458571,
+    "constrained_no_feedback/severe/temperature": 0.008623323519647152,
+    "constrained_no_feedback/severe/platt": 0.00644197500790933,
+    "constrained_no_feedback/severe/isotonic": 0.006260546119130603,
+    "constrained_no_feedback/moderate/raw": 0.016381834332038724,
+    "constrained_no_feedback/moderate/temperature": 0.012107137144080755,
+    "constrained_no_feedback/moderate/platt": 0.01089258147482147,
+    "constrained_no_feedback/moderate/isotonic": 0.006959532024223403
+  },
+  "mean_blind_brier": {
+    "constrained_feedback/severe/raw": 0.0662955090362123,
+    "constrained_feedback/severe/temperature": 0.06628557770224806,
+    "constrained_feedback/severe/platt": 0.06617789637655865,
+    "constrained_feedback/severe/isotonic": 0.06623009343298578,
+    "constrained_feedback/moderate/raw": 0.10992067950844704,
+    "constrained_feedback/moderate/temperature": 0.10979965611960311,
+    "constrained_feedback/moderate/platt": 0.10955321954900585,
+    "constrained_feedback/moderate/isotonic": 0.10947460283297487,
+    "constrained_no_feedback/severe/raw": 0.06629700453961108,
+    "constrained_no_feedback/severe/temperature": 0.06628209786098668,
+    "constrained_no_feedback/severe/platt": 0.06616526142139088,
+    "constrained_no_feedback/severe/isotonic": 0.0662357719475019,
+    "constrained_no_feedback/moderate/raw": 0.10975748659505422,
+    "constrained_no_feedback/moderate/temperature": 0.10964835332170228,
+    "constrained_no_feedback/moderate/platt": 0.10934407520384097,
+    "constrained_no_feedback/moderate/isotonic": 0.10922154016407475
+  },
+  "mean_blind_auprc": {
+    "constrained_feedback/severe/raw": 0.45028444912924526,
+    "constrained_feedback/severe/temperature": 0.45028444912924515,
+    "constrained_feedback/severe/platt": 0.45028444912924515,
+    "constrained_feedback/severe/isotonic": 0.43470284884459753,
+    "constrained_feedback/moderate/raw": 0.5966384823874494,
+    "constrained_feedback/moderate/temperature": 0.5966384823874494,
+    "constrained_feedback/moderate/platt": 0.5966384823874494,
+    "constrained_feedback/moderate/isotonic": 0.584902954807063,
+    "constrained_no_feedback/severe/raw": 0.4502604707570585,
+    "constrained_no_feedback/severe/temperature": 0.45026047075705844,
+    "constrained_no_feedback/severe/platt": 0.45026047075705844,
+    "constrained_no_feedback/severe/isotonic": 0.43481132717349136,
+    "constrained_no_feedback/moderate/raw": 0.5981873510479669,
+    "constrained_no_feedback/moderate/temperature": 0.5981873510479669,
+    "constrained_no_feedback/moderate/platt": 0.5981873510479669,
+    "constrained_no_feedback/moderate/isotonic": 0.5877748396324539
+  },
+  "comparisons": {
+    "feedback_vs_no_feedback/ece/severe/raw": {
+      "mean_feedback": 0.007196843920889649,
+      "mean_no_feedback": 0.007416839558458571,
+      "mean_delta_feedback_minus_none": -0.00021999563756892223,
+      "dz": -0.42757858336247867,
+      "wilcoxon_p": 0.193359375,
+      "n_pairs": 10,
+      "feedback_wins": 7,
+      "no_feedback_wins": 3,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/brier/severe/raw": {
+      "mean_feedback": 0.0662955090362123,
+      "mean_no_feedback": 0.06629700453961108,
+      "mean_delta_feedback_minus_none": -1.495503398797615e-06,
+      "dz": -0.02661240225184739,
+      "wilcoxon_p": 0.921875,
+      "n_pairs": 10,
+      "feedback_wins": 6,
+      "no_feedback_wins": 4,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/ece/severe/temperature": {
+      "mean_feedback": 0.008348964760601835,
+      "mean_no_feedback": 0.008623323519647152,
+      "mean_delta_feedback_minus_none": -0.00027435875904531883,
+      "dz": -0.4479147219994684,
+      "wilcoxon_p": 0.193359375,
+      "n_pairs": 10,
+      "feedback_wins": 7,
+      "no_feedback_wins": 3,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/brier/severe/temperature": {
+      "mean_feedback": 0.06628557770224806,
+      "mean_no_feedback": 0.06628209786098668,
+      "mean_delta_feedback_minus_none": 3.4798412613848416e-06,
+      "dz": 0.058276076965325024,
+      "wilcoxon_p": 0.921875,
+      "n_pairs": 10,
+      "feedback_wins": 6,
+      "no_feedback_wins": 4,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/ece/severe/platt": {
+      "mean_feedback": 0.006454874821238693,
+      "mean_no_feedback": 0.00644197500790933,
+      "mean_delta_feedback_minus_none": 1.2899813329362263e-05,
+      "dz": 0.02550017376544492,
+      "wilcoxon_p": 0.625,
+      "n_pairs": 10,
+      "feedback_wins": 4,
+      "no_feedback_wins": 6,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/brier/severe/platt": {
+      "mean_feedback": 0.06617789637655865,
+      "mean_no_feedback": 0.06616526142139088,
+      "mean_delta_feedback_minus_none": 1.2634955167752094e-05,
+      "dz": 0.16138977483685957,
+      "wilcoxon_p": 0.625,
+      "n_pairs": 10,
+      "feedback_wins": 5,
+      "no_feedback_wins": 5,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/ece/severe/isotonic": {
+      "mean_feedback": 0.006393337469174467,
+      "mean_no_feedback": 0.006260546119130603,
+      "mean_delta_feedback_minus_none": 0.00013279135004386463,
+      "dz": 0.19166552500411532,
+      "wilcoxon_p": 0.4921875,
+      "n_pairs": 10,
+      "feedback_wins": 3,
+      "no_feedback_wins": 7,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/brier/severe/isotonic": {
+      "mean_feedback": 0.06623009343298578,
+      "mean_no_feedback": 0.0662357719475019,
+      "mean_delta_feedback_minus_none": -5.678514516122002e-06,
+      "dz": -0.07007965545794705,
+      "wilcoxon_p": 0.921875,
+      "n_pairs": 10,
+      "feedback_wins": 5,
+      "no_feedback_wins": 5,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/ece/moderate/raw": {
+      "mean_feedback": 0.016017016964650653,
+      "mean_no_feedback": 0.016381834332038724,
+      "mean_delta_feedback_minus_none": -0.0003648173673880716,
+      "dz": -0.6478125313036637,
+      "wilcoxon_p": 0.064453125,
+      "n_pairs": 10,
+      "feedback_wins": 8,
+      "no_feedback_wins": 2,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/brier/moderate/raw": {
+      "mean_feedback": 0.10992067950844704,
+      "mean_no_feedback": 0.10975748659505422,
+      "mean_delta_feedback_minus_none": 0.00016319291339283586,
+      "dz": 1.8914386381264092,
+      "wilcoxon_p": 0.001953125,
+      "n_pairs": 10,
+      "feedback_wins": 0,
+      "no_feedback_wins": 10,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/ece/moderate/temperature": {
+      "mean_feedback": 0.011202903869548217,
+      "mean_no_feedback": 0.012107137144080755,
+      "mean_delta_feedback_minus_none": -0.0009042332745325358,
+      "dz": -1.2043775929945257,
+      "wilcoxon_p": 0.005859375,
+      "n_pairs": 10,
+      "feedback_wins": 9,
+      "no_feedback_wins": 1,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/brier/moderate/temperature": {
+      "mean_feedback": 0.10979965611960311,
+      "mean_no_feedback": 0.10964835332170228,
+      "mean_delta_feedback_minus_none": 0.00015130279790083467,
+      "dz": 1.7298795358772763,
+      "wilcoxon_p": 0.001953125,
+      "n_pairs": 10,
+      "feedback_wins": 0,
+      "no_feedback_wins": 10,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/ece/moderate/platt": {
+      "mean_feedback": 0.010633870689636771,
+      "mean_no_feedback": 0.01089258147482147,
+      "mean_delta_feedback_minus_none": -0.0002587107851846975,
+      "dz": -0.5974240621303627,
+      "wilcoxon_p": 0.064453125,
+      "n_pairs": 10,
+      "feedback_wins": 8,
+      "no_feedback_wins": 2,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/brier/moderate/platt": {
+      "mean_feedback": 0.10955321954900585,
+      "mean_no_feedback": 0.10934407520384097,
+      "mean_delta_feedback_minus_none": 0.00020914434516487306,
+      "dz": 2.2352284108700258,
+      "wilcoxon_p": 0.001953125,
+      "n_pairs": 10,
+      "feedback_wins": 0,
+      "no_feedback_wins": 10,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/ece/moderate/isotonic": {
+      "mean_feedback": 0.006953983273873603,
+      "mean_no_feedback": 0.006959532024223403,
+      "mean_delta_feedback_minus_none": -5.548750349799059e-06,
+      "dz": -0.005752095845453417,
+      "wilcoxon_p": 0.76953125,
+      "n_pairs": 10,
+      "feedback_wins": 5,
+      "no_feedback_wins": 5,
+      "ties": 0
+    },
+    "feedback_vs_no_feedback/brier/moderate/isotonic": {
+      "mean_feedback": 0.10947460283297487,
+      "mean_no_feedback": 0.10922154016407475,
+      "mean_delta_feedback_minus_none": 0.0002530626689001364,
+      "dz": 1.8346204944266291,
+      "wilcoxon_p": 0.001953125,
+      "n_pairs": 10,
+      "feedback_wins": 0,
+      "no_feedback_wins": 10,
+      "ties": 0
+    },
+    "raw_vs_calibrated/ece/constrained_feedback/moderate/temperature": {
+      "mean_raw": 0.016017016964650653,
+      "mean_calibrated": 0.011202903869548217,
+      "mean_delta_cal_minus_raw": -0.004814113095102438,
+      "dz": -1.4647306333539878,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/brier/constrained_feedback/moderate/temperature": {
+      "mean_raw": 0.10992067950844704,
+      "mean_calibrated": 0.10979965611960311,
+      "mean_delta_cal_minus_raw": -0.00012102338884393548,
+      "dz": -1.1660880703573244,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/ece/constrained_feedback/moderate/platt": {
+      "mean_raw": 0.016017016964650653,
+      "mean_calibrated": 0.010633870689636771,
+      "mean_delta_cal_minus_raw": -0.005383146275013883,
+      "dz": -2.1248331568252783,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/brier/constrained_feedback/moderate/platt": {
+      "mean_raw": 0.10992067950844704,
+      "mean_calibrated": 0.10955321954900585,
+      "mean_delta_cal_minus_raw": -0.0003674599594412034,
+      "dz": -3.3692910245672856,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/ece/constrained_feedback/moderate/isotonic": {
+      "mean_raw": 0.016017016964650653,
+      "mean_calibrated": 0.006953983273873603,
+      "mean_delta_cal_minus_raw": -0.009063033690777052,
+      "dz": -3.635102931772198,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/brier/constrained_feedback/moderate/isotonic": {
+      "mean_raw": 0.10992067950844704,
+      "mean_calibrated": 0.10947460283297487,
+      "mean_delta_cal_minus_raw": -0.0004460766754721693,
+      "dz": -3.667406126733727,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/ece/constrained_no_feedback/moderate/temperature": {
+      "mean_raw": 0.016381834332038724,
+      "mean_calibrated": 0.012107137144080755,
+      "mean_delta_cal_minus_raw": -0.004274697187957975,
+      "dz": -1.2303971508892186,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/brier/constrained_no_feedback/moderate/temperature": {
+      "mean_raw": 0.10975748659505422,
+      "mean_calibrated": 0.10964835332170228,
+      "mean_delta_cal_minus_raw": -0.0001091332733519343,
+      "dz": -1.0078482636033115,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/ece/constrained_no_feedback/moderate/platt": {
+      "mean_raw": 0.016381834332038724,
+      "mean_calibrated": 0.01089258147482147,
+      "mean_delta_cal_minus_raw": -0.005489252857217257,
+      "dz": -1.9346151878518763,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/brier/constrained_no_feedback/moderate/platt": {
+      "mean_raw": 0.10975748659505422,
+      "mean_calibrated": 0.10934407520384097,
+      "mean_delta_cal_minus_raw": -0.0004134113912132406,
+      "dz": -4.170607638157939,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/ece/constrained_no_feedback/moderate/isotonic": {
+      "mean_raw": 0.016381834332038724,
+      "mean_calibrated": 0.006959532024223403,
+      "mean_delta_cal_minus_raw": -0.009422302307815324,
+      "dz": -3.168123282973678,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    },
+    "raw_vs_calibrated/brier/constrained_no_feedback/moderate/isotonic": {
+      "mean_raw": 0.10975748659505422,
+      "mean_calibrated": 0.10922154016407475,
+      "mean_delta_cal_minus_raw": -0.0005359464309794698,
+      "dz": -6.278580009453516,
+      "wilcoxon_p": 0.001953125,
+      "improved": 10,
+      "degraded": 0
+    }
+  },
+  "deterministic_baselines": {
+    "cv": {
+      "fit_params": {
+        "severe": {
+          "temperature_T": 2.899603988741053,
+          "platt_a": 0.2202909951292971,
+          "platt_b": -0.9110393945275954
+        },
+        "moderate": {
+          "temperature_T": 4.383501307650865,
+          "platt_a": 0.23906567737954063,
+          "platt_b": 0.09278410700218853
+        }
+      },
+      "methods": {
+        "severe": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.07994810025028841,
+              "auprc": 0.32155483655920736,
+              "ece": 0.04593816659869157
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.08146210587382458,
+              "auprc": 0.25991266256976164,
+              "ece": 0.046959822650074076
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0756555322839658,
+              "auprc": 0.32155483655920736,
+              "ece": 0.012215996429161866
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.07609711267664616,
+              "auprc": 0.25991266256976164,
+              "ece": 0.007797113685592324
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.07406887379531339,
+              "auprc": 0.3080696988713323,
+              "ece": 0.00937099586476991
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.07523217431520407,
+              "auprc": 0.25485876207365343,
+              "ece": 8.632683456553291e-06
+            }
+          }
+        },
+        "moderate": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.12496357518508558,
+              "auprc": 0.48740455273697403,
+              "ece": 0.01828772535865463
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.12566704150414865,
+              "auprc": 0.448321998861086,
+              "ece": 0.00979122264143208
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.12473180785167548,
+              "auprc": 0.48740455273697403,
+              "ece": 0.01684154500177231
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1255539735895752,
+              "auprc": 0.448321998861086,
+              "ece": 0.010226081103154379
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.12350380085571837,
+              "auprc": 0.4765061563555586,
+              "ece": 0.009812754599250718
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.12457750853324025,
+              "auprc": 0.44370185820526975,
+              "ece": 1.5156962612374614e-05
+            }
+          }
+        }
+      },
+      "blind_raw": {
+        "severe": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.07793395086079856,
+          "auprc": 0.322158784213026,
+          "ece": 0.05433141790724586
+        },
+        "moderate": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.14727145956658938,
+          "auprc": 0.4887693539031352,
+          "ece": 0.13143737446202147
+        }
+      },
+      "val_raw": {
+        "severe": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.08117054692909761,
+          "auprc": 0.260671390375232,
+          "ece": 0.06273395953827897
+        },
+        "moderate": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.1498847333207703,
+          "auprc": 0.44996144785633335,
+          "ece": 0.1327073704703484
+        }
+      }
+    },
+    "imm": {
+      "fit_params": {
+        "severe": {
+          "temperature_T": 2.9110441249818297,
+          "platt_a": 0.2207245079746898,
+          "platt_b": -0.9015718623295571
+        },
+        "moderate": {
+          "temperature_T": 4.399582382977801,
+          "platt_a": 0.2394219713320911,
+          "platt_b": 0.10325208668360865
+        }
+      },
+      "methods": {
+        "severe": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0798827779227341,
+              "auprc": 0.3212358318086753,
+              "ece": 0.045342516772987354
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.08124702268332906,
+              "auprc": 0.2607662068555756,
+              "ece": 0.04634887178469187
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.07564208109330191,
+              "auprc": 0.3212358318086753,
+              "ece": 0.012927287341089996
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.07603759348418068,
+              "auprc": 0.2607662068555756,
+              "ece": 0.008470722193302025
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.07396899336721992,
+              "auprc": 0.3112547861690945,
+              "ece": 0.009055720240540362
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.0752000643485702,
+              "auprc": 0.2563088733149202,
+              "ece": 9.055360611801312e-06
+            }
+          }
+        },
+        "moderate": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.12493588662525931,
+              "auprc": 0.4872835449150706,
+              "ece": 0.01821183663424244
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.12557611193818152,
+              "auprc": 0.4477693796691514,
+              "ece": 0.009498188496979537
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.12467808126825572,
+              "auprc": 0.4872835449150706,
+              "ece": 0.01660543994020036
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1254412691191867,
+              "auprc": 0.4477693796691514,
+              "ece": 0.010279137759441347
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.12343683245881681,
+              "auprc": 0.4808185649849757,
+              "ece": 0.009429278379062583
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.12456573723905542,
+              "auprc": 0.4453035905889319,
+              "ece": 1.3190781013180878e-05
+            }
+          }
+        }
+      },
+      "blind_raw": {
+        "severe": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.0779970644182153,
+          "auprc": 0.32184968181875423,
+          "ece": 0.05469275642482776
+        },
+        "moderate": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.14752612643048982,
+          "auprc": 0.4886727805757651,
+          "ece": 0.13197107704260883
+        }
+      },
+      "val_raw": {
+        "severe": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.08106564607944126,
+          "auprc": 0.26154950939409405,
+          "ece": 0.062353737992671014
+        },
+        "moderate": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.1501339890958505,
+          "auprc": 0.44946509585343425,
+          "ece": 0.13338894552257377
+        }
+      }
+    }
+  },
+  "vs_baselines": {
+    "vs_cv/ece/constrained_feedback/severe/temperature": {
+      "kaorf_mean": 0.008348964760601835,
+      "baseline": 0.04593816659869157,
+      "mean_delta_kaorf_minus_baseline": -0.03758920183808974,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_no_feedback/severe/temperature": {
+      "kaorf_mean": 0.008623323519647152,
+      "baseline": 0.04593816659869157,
+      "mean_delta_kaorf_minus_baseline": -0.03731484307904442,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_feedback/severe/platt": {
+      "kaorf_mean": 0.006454874821238693,
+      "baseline": 0.012215996429161866,
+      "mean_delta_kaorf_minus_baseline": -0.005761121607923173,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_no_feedback/severe/platt": {
+      "kaorf_mean": 0.00644197500790933,
+      "baseline": 0.012215996429161866,
+      "mean_delta_kaorf_minus_baseline": -0.005774021421252535,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_feedback/severe/isotonic": {
+      "kaorf_mean": 0.006393337469174467,
+      "baseline": 0.00937099586476991,
+      "mean_delta_kaorf_minus_baseline": -0.002977658395595443,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_no_feedback/severe/isotonic": {
+      "kaorf_mean": 0.006260546119130603,
+      "baseline": 0.00937099586476991,
+      "mean_delta_kaorf_minus_baseline": -0.0031104497456393076,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_feedback/severe/raw": {
+      "kaorf_mean": 0.007196843920889649,
+      "baseline": 0.05433141790724586,
+      "mean_delta_kaorf_minus_baseline": -0.04713457398635622,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_no_feedback/severe/raw": {
+      "kaorf_mean": 0.007416839558458571,
+      "baseline": 0.05433141790724586,
+      "mean_delta_kaorf_minus_baseline": -0.046914578348787296,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_feedback/moderate/temperature": {
+      "kaorf_mean": 0.011202903869548217,
+      "baseline": 0.01828772535865463,
+      "mean_delta_kaorf_minus_baseline": -0.007084821489106416,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_no_feedback/moderate/temperature": {
+      "kaorf_mean": 0.012107137144080755,
+      "baseline": 0.01828772535865463,
+      "mean_delta_kaorf_minus_baseline": -0.006180588214573879,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_feedback/moderate/platt": {
+      "kaorf_mean": 0.010633870689636771,
+      "baseline": 0.01684154500177231,
+      "mean_delta_kaorf_minus_baseline": -0.006207674312135539,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_no_feedback/moderate/platt": {
+      "kaorf_mean": 0.01089258147482147,
+      "baseline": 0.01684154500177231,
+      "mean_delta_kaorf_minus_baseline": -0.00594896352695084,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_feedback/moderate/isotonic": {
+      "kaorf_mean": 0.006953983273873603,
+      "baseline": 0.009812754599250718,
+      "mean_delta_kaorf_minus_baseline": -0.002858771325377115,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_no_feedback/moderate/isotonic": {
+      "kaorf_mean": 0.006959532024223403,
+      "baseline": 0.009812754599250718,
+      "mean_delta_kaorf_minus_baseline": -0.002853222575027316,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_feedback/moderate/raw": {
+      "kaorf_mean": 0.016017016964650653,
+      "baseline": 0.13143737446202147,
+      "mean_delta_kaorf_minus_baseline": -0.11542035749737083,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/ece/constrained_no_feedback/moderate/raw": {
+      "kaorf_mean": 0.016381834332038724,
+      "baseline": 0.13143737446202147,
+      "mean_delta_kaorf_minus_baseline": -0.11505554012998273,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_feedback/severe/temperature": {
+      "kaorf_mean": 0.008348964760601835,
+      "baseline": 0.045342516772987354,
+      "mean_delta_kaorf_minus_baseline": -0.03699355201238552,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_no_feedback/severe/temperature": {
+      "kaorf_mean": 0.008623323519647152,
+      "baseline": 0.045342516772987354,
+      "mean_delta_kaorf_minus_baseline": -0.03671919325334021,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_feedback/severe/platt": {
+      "kaorf_mean": 0.006454874821238693,
+      "baseline": 0.012927287341089996,
+      "mean_delta_kaorf_minus_baseline": -0.006472412519851303,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_no_feedback/severe/platt": {
+      "kaorf_mean": 0.00644197500790933,
+      "baseline": 0.012927287341089996,
+      "mean_delta_kaorf_minus_baseline": -0.006485312333180666,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_feedback/severe/isotonic": {
+      "kaorf_mean": 0.006393337469174467,
+      "baseline": 0.009055720240540362,
+      "mean_delta_kaorf_minus_baseline": -0.0026623827713658944,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_no_feedback/severe/isotonic": {
+      "kaorf_mean": 0.006260546119130603,
+      "baseline": 0.009055720240540362,
+      "mean_delta_kaorf_minus_baseline": -0.002795174121409759,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_feedback/severe/raw": {
+      "kaorf_mean": 0.007196843920889649,
+      "baseline": 0.05469275642482776,
+      "mean_delta_kaorf_minus_baseline": -0.047495912503938115,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_no_feedback/severe/raw": {
+      "kaorf_mean": 0.007416839558458571,
+      "baseline": 0.05469275642482776,
+      "mean_delta_kaorf_minus_baseline": -0.047275916866369186,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_feedback/moderate/temperature": {
+      "kaorf_mean": 0.011202903869548217,
+      "baseline": 0.01821183663424244,
+      "mean_delta_kaorf_minus_baseline": -0.007008932764694223,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_no_feedback/moderate/temperature": {
+      "kaorf_mean": 0.012107137144080755,
+      "baseline": 0.01821183663424244,
+      "mean_delta_kaorf_minus_baseline": -0.006104699490161686,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_feedback/moderate/platt": {
+      "kaorf_mean": 0.010633870689636771,
+      "baseline": 0.01660543994020036,
+      "mean_delta_kaorf_minus_baseline": -0.005971569250563589,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_no_feedback/moderate/platt": {
+      "kaorf_mean": 0.01089258147482147,
+      "baseline": 0.01660543994020036,
+      "mean_delta_kaorf_minus_baseline": -0.005712858465378891,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_feedback/moderate/isotonic": {
+      "kaorf_mean": 0.006953983273873603,
+      "baseline": 0.009429278379062583,
+      "mean_delta_kaorf_minus_baseline": -0.002475295105188979,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_no_feedback/moderate/isotonic": {
+      "kaorf_mean": 0.006959532024223403,
+      "baseline": 0.009429278379062583,
+      "mean_delta_kaorf_minus_baseline": -0.0024697463548391803,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_feedback/moderate/raw": {
+      "kaorf_mean": 0.016017016964650653,
+      "baseline": 0.13197107704260883,
+      "mean_delta_kaorf_minus_baseline": -0.11595406007795814,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/ece/constrained_no_feedback/moderate/raw": {
+      "kaorf_mean": 0.016381834332038724,
+      "baseline": 0.13197107704260883,
+      "mean_delta_kaorf_minus_baseline": -0.1155892427105701,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_feedback/severe/temperature": {
+      "kaorf_mean": 0.06628557770224806,
+      "baseline": 0.07994810025028841,
+      "mean_delta_kaorf_minus_baseline": -0.01366252254804034,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_no_feedback/severe/temperature": {
+      "kaorf_mean": 0.06628209786098668,
+      "baseline": 0.07994810025028841,
+      "mean_delta_kaorf_minus_baseline": -0.013666002389301726,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_feedback/severe/platt": {
+      "kaorf_mean": 0.06617789637655865,
+      "baseline": 0.0756555322839658,
+      "mean_delta_kaorf_minus_baseline": -0.009477635907407175,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_no_feedback/severe/platt": {
+      "kaorf_mean": 0.06616526142139088,
+      "baseline": 0.0756555322839658,
+      "mean_delta_kaorf_minus_baseline": -0.009490270862574927,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_feedback/severe/isotonic": {
+      "kaorf_mean": 0.06623009343298578,
+      "baseline": 0.07406887379531339,
+      "mean_delta_kaorf_minus_baseline": -0.007838780362327612,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_no_feedback/severe/isotonic": {
+      "kaorf_mean": 0.0662357719475019,
+      "baseline": 0.07406887379531339,
+      "mean_delta_kaorf_minus_baseline": -0.007833101847811491,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_feedback/severe/raw": {
+      "kaorf_mean": 0.0662955090362123,
+      "baseline": 0.07793395086079856,
+      "mean_delta_kaorf_minus_baseline": -0.011638441824586265,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_no_feedback/severe/raw": {
+      "kaorf_mean": 0.06629700453961108,
+      "baseline": 0.07793395086079856,
+      "mean_delta_kaorf_minus_baseline": -0.011636946321187468,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_feedback/moderate/temperature": {
+      "kaorf_mean": 0.10979965611960311,
+      "baseline": 0.12496357518508558,
+      "mean_delta_kaorf_minus_baseline": -0.015163919065482468,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_no_feedback/moderate/temperature": {
+      "kaorf_mean": 0.10964835332170228,
+      "baseline": 0.12496357518508558,
+      "mean_delta_kaorf_minus_baseline": -0.015315221863383303,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_feedback/moderate/platt": {
+      "kaorf_mean": 0.10955321954900585,
+      "baseline": 0.12473180785167548,
+      "mean_delta_kaorf_minus_baseline": -0.015178588302669637,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_no_feedback/moderate/platt": {
+      "kaorf_mean": 0.10934407520384097,
+      "baseline": 0.12473180785167548,
+      "mean_delta_kaorf_minus_baseline": -0.01538773264783451,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_feedback/moderate/isotonic": {
+      "kaorf_mean": 0.10947460283297487,
+      "baseline": 0.12350380085571837,
+      "mean_delta_kaorf_minus_baseline": -0.014029198022743489,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_no_feedback/moderate/isotonic": {
+      "kaorf_mean": 0.10922154016407475,
+      "baseline": 0.12350380085571837,
+      "mean_delta_kaorf_minus_baseline": -0.014282260691643626,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_feedback/moderate/raw": {
+      "kaorf_mean": 0.10992067950844704,
+      "baseline": 0.14727145956658938,
+      "mean_delta_kaorf_minus_baseline": -0.03735078005814233,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_cv/brier/constrained_no_feedback/moderate/raw": {
+      "kaorf_mean": 0.10975748659505422,
+      "baseline": 0.14727145956658938,
+      "mean_delta_kaorf_minus_baseline": -0.03751397297153517,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_feedback/severe/temperature": {
+      "kaorf_mean": 0.06628557770224806,
+      "baseline": 0.0798827779227341,
+      "mean_delta_kaorf_minus_baseline": -0.013597200220486032,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_no_feedback/severe/temperature": {
+      "kaorf_mean": 0.06628209786098668,
+      "baseline": 0.0798827779227341,
+      "mean_delta_kaorf_minus_baseline": -0.013600680061747417,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_feedback/severe/platt": {
+      "kaorf_mean": 0.06617789637655865,
+      "baseline": 0.07564208109330191,
+      "mean_delta_kaorf_minus_baseline": -0.009464184716743276,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_no_feedback/severe/platt": {
+      "kaorf_mean": 0.06616526142139088,
+      "baseline": 0.07564208109330191,
+      "mean_delta_kaorf_minus_baseline": -0.009476819671911028,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_feedback/severe/isotonic": {
+      "kaorf_mean": 0.06623009343298578,
+      "baseline": 0.07396899336721992,
+      "mean_delta_kaorf_minus_baseline": -0.007738899934234139,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_no_feedback/severe/isotonic": {
+      "kaorf_mean": 0.0662357719475019,
+      "baseline": 0.07396899336721992,
+      "mean_delta_kaorf_minus_baseline": -0.0077332214197180175,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_feedback/severe/raw": {
+      "kaorf_mean": 0.0662955090362123,
+      "baseline": 0.0779970644182153,
+      "mean_delta_kaorf_minus_baseline": -0.011701555382003006,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_no_feedback/severe/raw": {
+      "kaorf_mean": 0.06629700453961108,
+      "baseline": 0.0779970644182153,
+      "mean_delta_kaorf_minus_baseline": -0.011700059878604209,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_feedback/moderate/temperature": {
+      "kaorf_mean": 0.10979965611960311,
+      "baseline": 0.12493588662525931,
+      "mean_delta_kaorf_minus_baseline": -0.015136230505656201,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_no_feedback/moderate/temperature": {
+      "kaorf_mean": 0.10964835332170228,
+      "baseline": 0.12493588662525931,
+      "mean_delta_kaorf_minus_baseline": -0.015287533303557036,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_feedback/moderate/platt": {
+      "kaorf_mean": 0.10955321954900585,
+      "baseline": 0.12467808126825572,
+      "mean_delta_kaorf_minus_baseline": -0.015124861719249877,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_no_feedback/moderate/platt": {
+      "kaorf_mean": 0.10934407520384097,
+      "baseline": 0.12467808126825572,
+      "mean_delta_kaorf_minus_baseline": -0.015334006064414749,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_feedback/moderate/isotonic": {
+      "kaorf_mean": 0.10947460283297487,
+      "baseline": 0.12343683245881681,
+      "mean_delta_kaorf_minus_baseline": -0.013962229625841935,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_no_feedback/moderate/isotonic": {
+      "kaorf_mean": 0.10922154016407475,
+      "baseline": 0.12343683245881681,
+      "mean_delta_kaorf_minus_baseline": -0.014215292294742072,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_feedback/moderate/raw": {
+      "kaorf_mean": 0.10992067950844704,
+      "baseline": 0.14752612643048982,
+      "mean_delta_kaorf_minus_baseline": -0.037605446922042776,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    },
+    "vs_imm/brier/constrained_no_feedback/moderate/raw": {
+      "kaorf_mean": 0.10975748659505422,
+      "baseline": 0.14752612643048982,
+      "mean_delta_kaorf_minus_baseline": -0.03776863983543561,
+      "kaorf_below_baseline": 10,
+      "n_seeds": 10,
+      "wilcoxon_one_sample_p": 0.001953125
+    }
+  },
+  "per_seed": {
+    "seed_17": {
+      "constrained_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06623855471233721,
+          "auprc": 0.45119998924144566,
+          "ece": 0.006324932458761758
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06893999319188582,
+          "auprc": 0.3806456559414835,
+          "ece": 0.008019667427485517
+        },
+        "fit_params": {
+          "temperature_T": 1.0254600799937095,
+          "platt_a": 1.0744132527470298,
+          "platt_b": 0.2477429480817096
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06623171417377598,
+              "auprc": 0.4511999892414457,
+              "ece": 0.008296681738335886
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06887484074813348,
+              "auprc": 0.3806456559414834,
+              "ece": 0.0088453883457088
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06613276600630898,
+              "auprc": 0.4511999892414457,
+              "ece": 0.0069756607904286555
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06875781229689173,
+              "auprc": 0.3806456559414834,
+              "ece": 0.004234865593439901
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06618818728931496,
+              "auprc": 0.4352023431125688,
+              "ece": 0.00688038546034323
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06839481440239509,
+              "auprc": 0.3712925122755536,
+              "ece": 5.5761955497701215e-18
+            }
+          }
+        }
+      },
+      "constrained_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10980256794858068,
+          "auprc": 0.5974574771752799,
+          "ece": 0.015522126686992524
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11087464875753701,
+          "auprc": 0.5645633508660426,
+          "ece": 0.013830341270838346
+        },
+        "fit_params": {
+          "temperature_T": 0.9661542468144566,
+          "platt_a": 1.111161772310545,
+          "platt_b": 0.15849264227446727
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10970833555859894,
+              "auprc": 0.5974574771752799,
+              "ece": 0.011045911314666364
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11085782153147503,
+              "auprc": 0.5645633508660427,
+              "ece": 0.012561921491579156
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10946283661279144,
+              "auprc": 0.5974574771752799,
+              "ece": 0.011147278451794154
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11046303040572446,
+              "auprc": 0.5645633508660427,
+              "ece": 0.00931211544394802
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10936660871459858,
+              "auprc": 0.5861757604860385,
+              "ece": 0.007467665079112314
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10991999720740118,
+              "auprc": 0.5567377164144681,
+              "ece": 7.951016548425723e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06628251799712345,
+          "auprc": 0.4512616252673065,
+          "ece": 0.007507881054196447
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06900337520017796,
+          "auprc": 0.38060178868840466,
+          "ece": 0.00927344081855265
+        },
+        "fit_params": {
+          "temperature_T": 1.034620024854192,
+          "platt_a": 1.0770782651041757,
+          "platt_b": 0.27812845802813724
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06625717691318121,
+              "auprc": 0.4512616252673065,
+              "ece": 0.008777406431351649
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06890173587992109,
+              "auprc": 0.38060178868840466,
+              "ece": 0.009853086300432098
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0661156232442318,
+              "auprc": 0.4512616252673065,
+              "ece": 0.006355628207328043
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.0687480270124877,
+              "auprc": 0.38060178868840466,
+              "ece": 0.0047217631224525025
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06618199272186653,
+              "auprc": 0.4323008345231346,
+              "ece": 0.0061967858199006185
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06834987634724726,
+              "auprc": 0.3701101682955849,
+              "ece": 8.802187147821924e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10969435022522762,
+          "auprc": 0.5990786663826664,
+          "ece": 0.015532768723905273
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11095045447576704,
+          "auprc": 0.565340149575114,
+          "ece": 0.014000291541395747
+        },
+        "fit_params": {
+          "temperature_T": 0.9777024217707907,
+          "platt_a": 1.1158631704308641,
+          "platt_b": 0.19369056711805904
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10964501085859411,
+              "auprc": 0.5990786663826665,
+              "ece": 0.013176247577114891
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11095050687423391,
+              "auprc": 0.565340149575114,
+              "ece": 0.013046108298946289
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10922691091592426,
+              "auprc": 0.5990786663826665,
+              "ece": 0.011422209036265753
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11039591965744773,
+              "auprc": 0.565340149575114,
+              "ece": 0.010215239075346752
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10906074037102914,
+              "auprc": 0.5885470253801345,
+              "ece": 0.006422304265928628
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10982442729709568,
+              "auprc": 0.557836181878847,
+              "ece": 1.820716613175077e-17
+            }
+          }
+        }
+      }
+    },
+    "seed_29": {
+      "constrained_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06638474542679838,
+          "auprc": 0.45002463272571747,
+          "ece": 0.008512125734417298
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06902729116408515,
+          "auprc": 0.381708535873627,
+          "ece": 0.010627881612925712
+        },
+        "fit_params": {
+          "temperature_T": 1.0399651537409387,
+          "platt_a": 1.0879037841883326,
+          "platt_b": 0.31934463335029223
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06634321954444808,
+              "auprc": 0.4500246327257174,
+              "ece": 0.009604346875672921
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06889617239061586,
+              "auprc": 0.38170853587362696,
+              "ece": 0.01074011083118996
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06618140230602594,
+              "auprc": 0.4500246327257174,
+              "ece": 0.006898641956433869
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06869207008041023,
+              "auprc": 0.38170853587362696,
+              "ece": 0.004775105238719956
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06623536328038639,
+              "auprc": 0.4341846341252542,
+              "ece": 0.005993273663080371
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06825846599284474,
+              "auprc": 0.3727446812366821,
+              "ece": 1.998614598990527e-18
+            }
+          }
+        }
+      },
+      "constrained_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10997297603113759,
+          "auprc": 0.5964314839667861,
+          "ece": 0.014602984270056081
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11111229903242655,
+          "auprc": 0.5644253829515262,
+          "ece": 0.014723341787132886
+        },
+        "fit_params": {
+          "temperature_T": 0.9865440653614002,
+          "platt_a": 1.1176564545867351,
+          "platt_b": 0.21761936998888515
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10995257217232703,
+              "auprc": 0.596431483966786,
+              "ece": 0.013188368592051858
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11112188898115975,
+              "auprc": 0.5644253829515261,
+              "ece": 0.013909069418308176
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.1094945161361662,
+              "auprc": 0.596431483966786,
+              "ece": 0.010590359090435713
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1104600451037734,
+              "auprc": 0.5644253829515261,
+              "ece": 0.00914741611635616
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10943343273685889,
+              "auprc": 0.5839880732430682,
+              "ece": 0.006831871363532344
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10987207468314478,
+              "auprc": 0.5562169118052177,
+              "ece": 1.7742302161571863e-17
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06640815488693096,
+          "auprc": 0.4495513300792222,
+          "ece": 0.008655404238829186
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06902657699936587,
+          "auprc": 0.38228169417285496,
+          "ece": 0.010904754483232353
+        },
+        "fit_params": {
+          "temperature_T": 1.0424737696631254,
+          "platt_a": 1.0898580091103667,
+          "platt_b": 0.33063305828337525
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06636039134289515,
+              "auprc": 0.4495513300792221,
+              "ece": 0.009265810211390956
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06888490043315494,
+              "auprc": 0.382281694172855,
+              "ece": 0.010452631605145405
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06619349343679692,
+              "auprc": 0.4495513300792221,
+              "ece": 0.00666145040467052
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06866522906166297,
+              "auprc": 0.382281694172855,
+              "ece": 0.004624806503338844
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06631340118217417,
+              "auprc": 0.43002831391057605,
+              "ece": 0.0058605093290082086
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06821187955718619,
+              "auprc": 0.37079100032889234,
+              "ece": 1.1207996664386812e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10978759221888024,
+          "auprc": 0.5987794532393343,
+          "ece": 0.015048655543188962
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11103852707698691,
+          "auprc": 0.5656697069158027,
+          "ece": 0.014420489136248984
+        },
+        "fit_params": {
+          "temperature_T": 0.9877572365393665,
+          "platt_a": 1.122021175099407,
+          "platt_b": 0.22917910014315365
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.1097684760125224,
+              "auprc": 0.5987794532393342,
+              "ece": 0.013941536513620546
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11104805979553058,
+              "auprc": 0.5656697069158028,
+              "ece": 0.013565487715040334
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10925526015940265,
+              "auprc": 0.5987794532393342,
+              "ece": 0.010664602533840323
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11033890740044495,
+              "auprc": 0.5656697069158028,
+              "ece": 0.009776463633511104
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10919394909979528,
+              "auprc": 0.5903140751733595,
+              "ece": 0.00746844369979132
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10975676549354087,
+              "auprc": 0.5599887110525206,
+              "ece": 1.686166350893015e-17
+            }
+          }
+        }
+      }
+    },
+    "seed_42": {
+      "constrained_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06637554339339861,
+          "auprc": 0.4501222191790135,
+          "ece": 0.007136919455710134
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06897557998261891,
+          "auprc": 0.38238666332925264,
+          "ece": 0.01034208351893649
+        },
+        "fit_params": {
+          "temperature_T": 1.0396550000610358,
+          "platt_a": 1.0840568499321788,
+          "platt_b": 0.3102989456976733
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0663434880401213,
+              "auprc": 0.4501222191790135,
+              "ece": 0.008877423868349991
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06885233701971653,
+              "auprc": 0.38238666332925264,
+              "ece": 0.009917793055646483
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0661803134348551,
+              "auprc": 0.4501222191790135,
+              "ece": 0.00651536134599413
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.0686697830785566,
+              "auprc": 0.38238666332925264,
+              "ece": 0.004233373420921435
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06621310750459354,
+              "auprc": 0.4359939281058769,
+              "ece": 0.006581535419305626
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.068334614366837,
+              "auprc": 0.3732069749596053,
+              "ece": 4.1124949001109234e-19
+            }
+          }
+        }
+      },
+      "constrained_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.11008918856125322,
+          "auprc": 0.5956551270751496,
+          "ece": 0.01320761009058175
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11118173403154423,
+          "auprc": 0.5646778882389578,
+          "ece": 0.014715448617197669
+        },
+        "fit_params": {
+          "temperature_T": 0.9895257609461414,
+          "platt_a": 1.11695294787319,
+          "platt_b": 0.22360785204900027
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.11007540233033487,
+              "auprc": 0.5956551270751496,
+              "ece": 0.012453660331963984
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11119055833188615,
+              "auprc": 0.5646778882389578,
+              "ece": 0.013704145902637594
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10960980633960532,
+              "auprc": 0.5956551270751496,
+              "ece": 0.00993690269582258
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11052460463826126,
+              "auprc": 0.5646778882389578,
+              "ece": 0.008400794102308314
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10957984485090724,
+              "auprc": 0.5819856995482282,
+              "ece": 0.007034791305672989
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11001237458160315,
+              "auprc": 0.5553303904170607,
+              "ece": 2.6647808503451147e-17
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.0664141877051052,
+          "auprc": 0.4488519082419782,
+          "ece": 0.006724968958506623
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06903449118611021,
+          "auprc": 0.3805383471827787,
+          "ece": 0.010113722779778537
+        },
+        "fit_params": {
+          "temperature_T": 1.0366727686633748,
+          "platt_a": 1.080146149816874,
+          "platt_b": 0.2927092695892515
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06639063359070363,
+              "auprc": 0.4488519082419782,
+              "ece": 0.008811526348910054
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06892477020217709,
+              "auprc": 0.3805383471827787,
+              "ece": 0.010059172114951427
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06625233437086231,
+              "auprc": 0.4488519082419782,
+              "ece": 0.006127642441363535
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06876543244667922,
+              "auprc": 0.3805383471827787,
+              "ece": 0.004016943113224628
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06632719725739021,
+              "auprc": 0.43598705025582213,
+              "ece": 0.006254925642600641
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06840374945719488,
+              "auprc": 0.37255528575654456,
+              "ece": 9.153070570527249e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10994628328560706,
+          "auprc": 0.596407054361264,
+          "ece": 0.013660922618647504
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11110208366602284,
+          "auprc": 0.5650095059862921,
+          "ece": 0.014203217604433108
+        },
+        "fit_params": {
+          "temperature_T": 0.9856680314646677,
+          "platt_a": 1.1171308906443804,
+          "platt_b": 0.21535737531645727
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10992287673330112,
+              "auprc": 0.5964070543612637,
+              "ece": 0.012062535346821232
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11111048861171087,
+              "auprc": 0.5650095059862921,
+              "ece": 0.013192926951677057
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10948732544687856,
+              "auprc": 0.5964070543612637,
+              "ece": 0.010365614416592233
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1104760524570243,
+              "auprc": 0.5650095059862921,
+              "ece": 0.009168262955011742
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10944870563869483,
+              "auprc": 0.5870372652123497,
+              "ece": 0.006777796882914562
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10992542099077846,
+              "auprc": 0.5584746058577932,
+              "ece": 2.6227436225457412e-17
+            }
+          }
+        }
+      }
+    },
+    "seed_71": {
+      "constrained_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06620647170320923,
+          "auprc": 0.4521357894705761,
+          "ece": 0.00802795017215737
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06879446297504911,
+          "auprc": 0.3837735306196759,
+          "ece": 0.008654343969027017
+        },
+        "fit_params": {
+          "temperature_T": 1.0092587957415804,
+          "platt_a": 1.1109501252751468,
+          "platt_b": 0.29662383396030506
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0662038545700561,
+              "auprc": 0.45213578947057603,
+              "ece": 0.00902858200134601
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06877088506140233,
+              "auprc": 0.38377353061967584,
+              "ece": 0.008846258839656854
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06607532330168871,
+              "auprc": 0.45213578947057603,
+              "ece": 0.0066135907233818795
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06859469566214024,
+              "auprc": 0.38377353061967584,
+              "ece": 0.0035458793719941187
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06610437688630764,
+              "auprc": 0.4367445457690203,
+              "ece": 0.006496220923098234
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.0682370246874069,
+              "auprc": 0.3744075061024031,
+              "ece": 3.844024282336076e-18
+            }
+          }
+        }
+      },
+      "constrained_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.1099614147938252,
+          "auprc": 0.5974384458855188,
+          "ece": 0.017214912178770282
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11100257142069543,
+          "auprc": 0.5650944440619775,
+          "ece": 0.01648599744030126
+        },
+        "fit_params": {
+          "temperature_T": 0.9527768990627332,
+          "platt_a": 1.1400981180207417,
+          "platt_b": 0.18500118091359288
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10983039030151578,
+              "auprc": 0.5974384458855188,
+              "ece": 0.011500766884772456
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11097631273731541,
+              "auprc": 0.5650944440619776,
+              "ece": 0.012296307453898888
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10949956825396372,
+              "auprc": 0.5974384458855188,
+              "ece": 0.010871167994157433
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11047518421718817,
+              "auprc": 0.5650944440619776,
+              "ece": 0.00953623373427544
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10935808446463399,
+              "auprc": 0.5847173738090663,
+              "ece": 0.007234681589718525
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10995168643627615,
+              "auprc": 0.5561445685906741,
+              "ece": 2.2381239850744517e-17
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06624315765131246,
+          "auprc": 0.4510311942165059,
+          "ece": 0.00743465156676517
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06877006062414528,
+          "auprc": 0.3834599336201469,
+          "ece": 0.008786593190122533
+        },
+        "fit_params": {
+          "temperature_T": 1.0103759673951607,
+          "platt_a": 1.1051503083640155,
+          "platt_b": 0.285722218571085
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0662403652845974,
+              "auprc": 0.4510311942165059,
+              "ece": 0.00810325446975097
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06874391188603471,
+              "auprc": 0.3834599336201469,
+              "ece": 0.009256195758880668
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06613037644662705,
+              "auprc": 0.4510311942165059,
+              "ece": 0.00676515353916209
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06858211894979911,
+              "auprc": 0.3834599336201469,
+              "ece": 0.004308311099097505
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06620664445056476,
+              "auprc": 0.4376390644164594,
+              "ece": 0.006855463551208077
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.0682383292358935,
+              "auprc": 0.37557757608732123,
+              "ece": 4.1009104074345545e-19
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10983914979094084,
+          "auprc": 0.5981151128011306,
+          "ece": 0.01689635947817676
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11076181718064128,
+          "auprc": 0.5673402486045538,
+          "ece": 0.016506015820517257
+        },
+        "fit_params": {
+          "temperature_T": 0.9547969577677118,
+          "platt_a": 1.1398114173337792,
+          "platt_b": 0.18953620440999058
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10971885481395698,
+              "auprc": 0.5981151128011306,
+              "ece": 0.011503829693904673
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11073595435779152,
+              "auprc": 0.5673402486045538,
+              "ece": 0.0122310955055758
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10938080846257887,
+              "auprc": 0.5981151128011306,
+              "ece": 0.010249651281544207
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11021133792830762,
+              "auprc": 0.5673402486045538,
+              "ece": 0.010285798923349755
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10930261400574727,
+              "auprc": 0.5881498183624982,
+              "ece": 0.006922477648522219
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10969125866834172,
+              "auprc": 0.5607817703411553,
+              "ece": 1.1274897109592843e-17
+            }
+          }
+        }
+      }
+    },
+    "seed_101": {
+      "constrained_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06637638988959456,
+          "auprc": 0.4480727262014505,
+          "ece": 0.006498094025299126
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06893587111777523,
+          "auprc": 0.38095097437400083,
+          "ece": 0.00877848883404769
+        },
+        "fit_params": {
+          "temperature_T": 1.024149353392092,
+          "platt_a": 1.0741144806192513,
+          "platt_b": 0.24503200351301374
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06636161958704394,
+              "auprc": 0.44807272620145056,
+              "ece": 0.007278841176453799
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06886927768560894,
+              "auprc": 0.3809509743740008,
+              "ece": 0.009392547297964595
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06630352784963893,
+              "auprc": 0.44807272620145056,
+              "ece": 0.005967796840541757
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06877077525926763,
+              "auprc": 0.3809509743740008,
+              "ece": 0.005425035772098788
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06634001914404405,
+              "auprc": 0.4313445130519198,
+              "ece": 0.006649349028397846
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06834353841823969,
+              "auprc": 0.3711871780320482,
+              "ece": 4.609035217451782e-18
+            }
+          }
+        }
+      },
+      "constrained_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10984042928822418,
+          "auprc": 0.5965658704493367,
+          "ece": 0.014218745253997273
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11100695499407644,
+          "auprc": 0.5638171813759822,
+          "ece": 0.014293365644324475
+        },
+        "fit_params": {
+          "temperature_T": 0.9708908912344925,
+          "platt_a": 1.1075826291335167,
+          "platt_b": 0.16273223343119134
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10977572772069781,
+              "auprc": 0.5965658704493367,
+              "ece": 0.01090955460008237
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11100530075674245,
+              "auprc": 0.5638171813759822,
+              "ece": 0.011719079183636507
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10951471387296925,
+              "auprc": 0.5965658704493367,
+              "ece": 0.00964511237257782
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11059777014108318,
+              "auprc": 0.5638171813759822,
+              "ece": 0.008638185473158868
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10955388789932446,
+              "auprc": 0.5847899843094069,
+              "ece": 0.007610202540863008
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11004643316403087,
+              "auprc": 0.5559651588514865,
+              "ece": 7.077545800627517e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06632953915695287,
+          "auprc": 0.44987235909035683,
+          "ece": 0.00712561786824646
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06901737389341252,
+          "auprc": 0.381644987879888,
+          "ece": 0.009783688468173998
+        },
+        "fit_params": {
+          "temperature_T": 1.0346310949960988,
+          "platt_a": 1.0797498442638425,
+          "platt_b": 0.28645834342290477
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06629570155873893,
+              "auprc": 0.44987235909035683,
+              "ece": 0.008439272430392011
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06890680810285482,
+              "auprc": 0.38164498787988804,
+              "ece": 0.010160150987949073
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06618669268550482,
+              "auprc": 0.44987235909035683,
+              "ece": 0.006523263389363351
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06875314240773982,
+              "auprc": 0.38164498787988804,
+              "ece": 0.005547369407733223
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06626335326546011,
+              "auprc": 0.43271443430436907,
+              "ece": 0.0062110975918214595
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06827592016484328,
+              "auprc": 0.37240787537783376,
+              "ece": 1.2536955183603995e-17
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10978863128402176,
+          "auprc": 0.5981533248306329,
+          "ece": 0.01424956129748966
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11118401123313193,
+          "auprc": 0.5643022122463033,
+          "ece": 0.014429288358291218
+        },
+        "fit_params": {
+          "temperature_T": 0.9829221190911299,
+          "platt_a": 1.1150356549658202,
+          "platt_b": 0.20427505199471088
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10975826535677716,
+              "auprc": 0.5981533248306329,
+              "ece": 0.012606595410729
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11119372510892617,
+              "auprc": 0.5643022122463033,
+              "ece": 0.013462250879789101
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.1093402833167783,
+              "auprc": 0.5981533248306329,
+              "ece": 0.010547233722864858
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1106040954025893,
+              "auprc": 0.5643022122463033,
+              "ece": 0.009357801297741079
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10920646540368575,
+              "auprc": 0.5861692377316116,
+              "ece": 0.007285468137531736
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11001924508497067,
+              "auprc": 0.5564534193496048,
+              "ece": 1.2136928170873135e-17
+            }
+          }
+        }
+      }
+    },
+    "seed_131": {
+      "constrained_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06633439473254805,
+          "auprc": 0.44886166961578533,
+          "ece": 0.005538265344234443
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06896925859267287,
+          "auprc": 0.3794564908154685,
+          "ece": 0.00771993451277433
+        },
+        "fit_params": {
+          "temperature_T": 1.0257598273645991,
+          "platt_a": 1.0579595533777695,
+          "platt_b": 0.20760386453952331
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0663335801755494,
+              "auprc": 0.4488616696157853,
+              "ece": 0.008030728157648711
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.0689121872788806,
+              "auprc": 0.3794564908154685,
+              "ece": 0.007557938174695704
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06626716424753039,
+              "auprc": 0.4488616696157853,
+              "ece": 0.005857453767453252
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06882927352289495,
+              "auprc": 0.3794564908154685,
+              "ece": 0.003503720328951985
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06629466844114819,
+              "auprc": 0.4356046000437703,
+              "ece": 0.006961817508469911
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06847341990205985,
+              "auprc": 0.3706934574186984,
+              "ece": 6.183512578328755e-18
+            }
+          }
+        }
+      },
+      "constrained_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10994001452371947,
+          "auprc": 0.5956390693947976,
+          "ece": 0.012929389168261779
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11104476391745977,
+          "auprc": 0.562423998528407,
+          "ece": 0.010887132749463919
+        },
+        "fit_params": {
+          "temperature_T": 0.9831776335867418,
+          "platt_a": 1.075335195652199,
+          "platt_b": 0.12466257336155262
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10990063170446339,
+              "auprc": 0.5956390693947975,
+              "ece": 0.010912679065522833
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11103984128432488,
+              "auprc": 0.5624239985284069,
+              "ece": 0.009952851717517091
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10974745525762918,
+              "auprc": 0.5956390693947975,
+              "ece": 0.010574150246411338
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11077673386307714,
+              "auprc": 0.5624239985284069,
+              "ece": 0.009858396618515976
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10968819325712684,
+              "auprc": 0.5854386272362222,
+              "ece": 0.005326481130789065
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11022202499000913,
+              "auprc": 0.5550558078313426,
+              "ece": 4.872437619680717e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06624805092314952,
+          "auprc": 0.45085472262697196,
+          "ece": 0.006006981802221214
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.0689301154298243,
+          "auprc": 0.38191655581185285,
+          "ece": 0.009130826906098132
+        },
+        "fit_params": {
+          "temperature_T": 1.0360042355515686,
+          "platt_a": 1.0629061685324708,
+          "platt_b": 0.24674719523556587
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06623438482629788,
+              "auprc": 0.45085472262697196,
+              "ece": 0.00864554359475612
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06883516346710344,
+              "auprc": 0.3819165558118529,
+              "ece": 0.007979493901355003
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06613826961597487,
+              "auprc": 0.45085472262697196,
+              "ece": 0.006918824343683398
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06870145095172382,
+              "auprc": 0.3819165558118529,
+              "ece": 0.003867751757986372
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06618878222000892,
+              "auprc": 0.43850062363397163,
+              "ece": 0.005837992385439609
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.0683303537958184,
+              "auprc": 0.3743356470884291,
+              "ece": 5.413904047682117e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10964867192743447,
+          "auprc": 0.5982440296683262,
+          "ece": 0.012955537618577713
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11095492402323585,
+          "auprc": 0.5652769587899394,
+          "ece": 0.01164354153170197
+        },
+        "fit_params": {
+          "temperature_T": 0.9941062561211944,
+          "platt_a": 1.0832232739342684,
+          "platt_b": 0.16525789367706986
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10963664141586778,
+              "auprc": 0.5982440296683263,
+              "ece": 0.012231301776391593
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11095569955475461,
+              "auprc": 0.5652769587899394,
+              "ece": 0.011495303404573344
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10936109085854279,
+              "auprc": 0.5982440296683263,
+              "ece": 0.011226125452797229
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11052831871116871,
+              "auprc": 0.5652769587899394,
+              "ece": 0.010797939598084628
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10919300443701152,
+              "auprc": 0.5868082313941698,
+              "ece": 0.006503672566624288
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10991664481858808,
+              "auprc": 0.5579139853104375,
+              "ece": 3.288348750036317e-17
+            }
+          }
+        }
+      }
+    },
+    "seed_211": {
+      "constrained_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06629883781341676,
+          "auprc": 0.449124417500614,
+          "ece": 0.006426973398820893
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06881058225258141,
+          "auprc": 0.3816819710834882,
+          "ece": 0.007297662389225844
+        },
+        "fit_params": {
+          "temperature_T": 1.01316221234737,
+          "platt_a": 1.068656015495369,
+          "platt_b": 0.20147537307205798
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06630311603769694,
+              "auprc": 0.44912441750061394,
+              "ece": 0.0073780199278414196
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.0687851768389305,
+              "auprc": 0.3816819710834882,
+              "ece": 0.00739007090449941
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06625347229226398,
+              "auprc": 0.44912441750061394,
+              "ece": 0.006754839610232343
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06869385495729195,
+              "auprc": 0.3816819710834882,
+              "ece": 0.0036097481136704405
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06629840097008224,
+              "auprc": 0.43041505600752256,
+              "ece": 0.0058368215114359455
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.0683306795946731,
+              "auprc": 0.3699260840128686,
+              "ece": 4.620456803199888e-18
+            }
+          }
+        }
+      },
+      "constrained_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.11010579929035927,
+          "auprc": 0.5947369860181247,
+          "ece": 0.016613803076889394
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11076520347586938,
+          "auprc": 0.5647350712480581,
+          "ece": 0.013138608518326982
+        },
+        "fit_params": {
+          "temperature_T": 0.9544782379314248,
+          "platt_a": 1.08873778671486,
+          "platt_b": 0.08627489512913697
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10993926254734471,
+              "auprc": 0.5947369860181247,
+              "ece": 0.01068560705233957
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11069025416913919,
+              "auprc": 0.5647350712480581,
+              "ece": 0.010699660398144552
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.1098910997221064,
+              "auprc": 0.5947369860181247,
+              "ece": 0.011679674132815275
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11053319025459576,
+              "auprc": 0.5647350712480581,
+              "ece": 0.009189846865722271
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10973465259121105,
+              "auprc": 0.5821576992148288,
+              "ece": 0.006808482729375444
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10997432502208884,
+              "auprc": 0.5556332260415813,
+              "ece": 2.3355495684827134e-17
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06629433209849656,
+          "auprc": 0.4491255911339373,
+          "ece": 0.006606237064833522
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06889860182069402,
+          "auprc": 0.3798326928095195,
+          "ece": 0.00783074146652091
+        },
+        "fit_params": {
+          "temperature_T": 1.017825342251225,
+          "platt_a": 1.0668358428098155,
+          "platt_b": 0.20873077586626226
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0662983738728864,
+              "auprc": 0.4491255911339373,
+              "ece": 0.008297566073028563
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06886078539050869,
+              "auprc": 0.37983269280951953,
+              "ece": 0.007919522545925232
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0662352531591631,
+              "auprc": 0.4491255911339373,
+              "ece": 0.006564654449668102
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06876933601227594,
+              "auprc": 0.37983269280951953,
+              "ece": 0.003742175987866985
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06629885572642503,
+              "auprc": 0.4333191756311403,
+              "ece": 0.007131670117303684
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06837316595312407,
+              "auprc": 0.36998087691075326,
+              "ece": 1.1390235214801938e-17
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10986036151948152,
+          "auprc": 0.5965021177652781,
+          "ece": 0.016451231636541983
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11076680177173132,
+          "auprc": 0.5643298915655277,
+          "ece": 0.012781195223476715
+        },
+        "fit_params": {
+          "temperature_T": 0.9607074534820746,
+          "platt_a": 1.0900330436883339,
+          "platt_b": 0.10339603449708776
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.1097223955390015,
+              "auprc": 0.596502117765278,
+              "ece": 0.011501555144986282
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1107172460948675,
+              "auprc": 0.5643298915655277,
+              "ece": 0.010357580917947685
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10964237405171909,
+              "auprc": 0.596502117765278,
+              "ece": 0.011592707462118124
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1105126330468653,
+              "auprc": 0.5643298915655277,
+              "ece": 0.009921196909631405
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10947475705696916,
+              "auprc": 0.5834256682503711,
+              "ece": 0.007566414259987409
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1099527146339409,
+              "auprc": 0.5555217607158869,
+              "ece": 2.3583854996710054e-17
+            }
+          }
+        }
+      }
+    },
+    "seed_307": {
+      "constrained_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06628705209788512,
+          "auprc": 0.4507641059884495,
+          "ece": 0.00844548049317502
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06869401145316766,
+          "auprc": 0.3853641277947092,
+          "ece": 0.009711560988164
+        },
+        "fit_params": {
+          "temperature_T": 0.999434545118836,
+          "platt_a": 1.1317155583082603,
+          "platt_b": 0.32019989961277606
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06628716846887614,
+              "auprc": 0.45076410598844946,
+              "ece": 0.008369710045096469
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06869541594845383,
+              "auprc": 0.3853641277947092,
+              "ece": 0.00966763480519962
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06617386918236397,
+              "auprc": 0.45076410598844946,
+              "ece": 0.006407460398934972
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06848120209640444,
+              "auprc": 0.3853641277947092,
+              "ece": 0.004208233052633587
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0662384481218959,
+              "auprc": 0.4336399150505904,
+              "ece": 0.006274566159895931
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06810744695938893,
+              "auprc": 0.3737390744283831,
+              "ece": 5.3572848397263645e-18
+            }
+          }
+        }
+      },
+      "constrained_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10992485958201652,
+          "auprc": 0.5974019578652114,
+          "ece": 0.021065290662642844
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11067661680051863,
+          "auprc": 0.5671654519038823,
+          "ece": 0.018689091888162326
+        },
+        "fit_params": {
+          "temperature_T": 0.9199782790037568,
+          "platt_a": 1.1601115274541816,
+          "platt_b": 0.146360889123946
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10960955545172514,
+              "auprc": 0.5974019578652114,
+              "ece": 0.010207581025582758
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11053420410237201,
+              "auprc": 0.5671654519038823,
+              "ece": 0.011493502660911706
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10944748840270929,
+              "auprc": 0.5974019578652114,
+              "ece": 0.010943514597140085
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11018218906770193,
+              "auprc": 0.5671654519038823,
+              "ece": 0.009067500186632719
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10935002485222141,
+              "auprc": 0.5864667656376648,
+              "ece": 0.007175868592292759
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10963825893329829,
+              "auprc": 0.5595581676877848,
+              "ece": 3.2002161018468806e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06620648671431223,
+          "auprc": 0.4517173739157862,
+          "ece": 0.008396066930628143
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06886737251650792,
+          "auprc": 0.38231157581933506,
+          "ece": 0.009604933147454487
+        },
+        "fit_params": {
+          "temperature_T": 1.0031024923200718,
+          "platt_a": 1.1196210067385037,
+          "platt_b": 0.3008464978114401
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06620585856741074,
+              "auprc": 0.45171737391578626,
+              "ece": 0.00877002949650202
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06885957055387014,
+              "auprc": 0.38231157581933506,
+              "ece": 0.009723697522042678
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06608249583135323,
+              "auprc": 0.45171737391578626,
+              "ece": 0.006483504347201168
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06867554971520388,
+              "auprc": 0.38231157581933506,
+              "ece": 0.0044385223790140114
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06615151917604885,
+              "auprc": 0.4372867340449641,
+              "ece": 0.006013333952985317
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06828170756915829,
+              "auprc": 0.3735064848753328,
+              "ece": 9.009404760570469e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.1097051903913385,
+          "auprc": 0.5992464084428648,
+          "ece": 0.02167387202377491
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11091846987758797,
+          "auprc": 0.5651724552509476,
+          "ece": 0.017780069054067833
+        },
+        "fit_params": {
+          "temperature_T": 0.9255303501834795,
+          "platt_a": 1.152935696764663,
+          "platt_b": 0.14549672801851574
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10940561153159227,
+              "auprc": 0.5992464084428648,
+              "ece": 0.011504836742394317
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11079940059655256,
+              "auprc": 0.5651724552509476,
+              "ece": 0.011224580344607438
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.1092099260154966,
+              "auprc": 0.5992464084428648,
+              "ece": 0.011580828046010672
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1104495721134962,
+              "auprc": 0.5651724552509476,
+              "ece": 0.008909147326185354
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.1090440854465221,
+              "auprc": 0.5884953763880933,
+              "ece": 0.008135239265533034
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1099109475183054,
+              "auprc": 0.5578428933527143,
+              "ece": 1.728695919631134e-17
+            }
+          }
+        }
+      }
+    },
+    "seed_509": {
+      "constrained_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06615167896931226,
+          "auprc": 0.45228986257246095,
+          "ece": 0.008525723375677856
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06877549048683614,
+          "auprc": 0.3822352942825253,
+          "ece": 0.009218907946793708
+        },
+        "fit_params": {
+          "temperature_T": 1.0011772008240258,
+          "platt_a": 1.10339252009774,
+          "platt_b": 0.25525183800768203
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06615170144625826,
+              "auprc": 0.452289862572461,
+              "ece": 0.008609969659377839
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06877299755597759,
+              "auprc": 0.38223529428252534,
+              "ece": 0.009148418531513632
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06603166935805112,
+              "auprc": 0.452289862572461,
+              "ece": 0.006447848442675208
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06863539098128911,
+              "auprc": 0.38223529428252534,
+              "ece": 0.004597996537036864
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0661272047361568,
+              "auprc": 0.4375438740115481,
+              "ece": 0.005484987893404323
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06827113062162818,
+              "auprc": 0.3735126347275608,
+              "ece": 4.568055074609126e-18
+            }
+          }
+        }
+      },
+      "constrained_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10962315597295257,
+          "auprc": 0.5989002146280029,
+          "ece": 0.01967507485749024
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11064304507864181,
+          "auprc": 0.565955109069239,
+          "ece": 0.016320883256352458
+        },
+        "fit_params": {
+          "temperature_T": 0.9308718565948206,
+          "platt_a": 1.126167329451716,
+          "platt_b": 0.10632661635817438
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10934770360785748,
+              "auprc": 0.5989002146280029,
+              "ece": 0.010367117343513947
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11051109658201903,
+              "auprc": 0.565955109069239,
+              "ece": 0.01041684164822262
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10922424812442506,
+              "auprc": 0.5989002146280029,
+              "ece": 0.010276137348956056
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11029928421883227,
+              "auprc": 0.565955109069239,
+              "ece": 0.009825717563232422
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10910764146862431,
+              "auprc": 0.5878014131471697,
+              "ece": 0.007224911131204539
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10977837794236028,
+              "auprc": 0.5584049206529752,
+              "ece": 9.14450890640862e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06615908320883555,
+          "auprc": 0.45213130599277257,
+          "ece": 0.00903066180940672
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06881258259574165,
+          "auprc": 0.3817503087961237,
+          "ece": 0.009447345522306241
+        },
+        "fit_params": {
+          "temperature_T": 1.0001937996641186,
+          "platt_a": 1.102773969014846,
+          "platt_b": 0.25134980194506196
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06615907394935958,
+              "auprc": 0.4521313059927725,
+              "ece": 0.009044398272942435
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06881217229185164,
+              "auprc": 0.3817503087961237,
+              "ece": 0.009468901926820284
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06604369736365702,
+              "auprc": 0.4521313059927725,
+              "ece": 0.005993048625427285
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06868053078173832,
+              "auprc": 0.3817503087961237,
+              "ece": 0.004651946648360965
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06609880167651941,
+              "auprc": 0.4387819820501897,
+              "ece": 0.0060136564308551415
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06830606669566032,
+              "auprc": 0.3735500121948264,
+              "ece": 1.2275109447578448e-17
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10959248962588827,
+          "auprc": 0.5995069018327533,
+          "ece": 0.0208539870045414
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11070848476829788,
+          "auprc": 0.5661858562740643,
+          "ece": 0.01714717814389523
+        },
+        "fit_params": {
+          "temperature_T": 0.9277014388802816,
+          "platt_a": 1.1296957449727951,
+          "platt_b": 0.1055000831359822
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10929995602342542,
+              "auprc": 0.5995069018327533,
+              "ece": 0.010980739291748459
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11055876755962747,
+              "auprc": 0.5661858562740643,
+              "ece": 0.010862639312305149
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10916616073998954,
+              "auprc": 0.5995069018327533,
+              "ece": 0.010442351278638635
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11034710678886991,
+              "auprc": 0.5661858562740643,
+              "ece": 0.009704670382121599
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10904904378577497,
+              "auprc": 0.59039007702809,
+              "ece": 0.005328155252958822
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1098113530265459,
+              "auprc": 0.5598783037359845,
+              "ece": 5.056631053234981e-18
+            }
+          }
+        }
+      }
+    },
+    "seed_887": {
+      "constrained_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06630142162362275,
+          "auprc": 0.45024907879693943,
+          "ece": 0.006531974750642582
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06881547085733793,
+          "auprc": 0.38302394610293256,
+          "ece": 0.00814207492003362
+        },
+        "fit_params": {
+          "temperature_T": 1.022614125368196,
+          "platt_a": 1.0864059720687638,
+          "platt_b": 0.26966768033961747
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06629631497865454,
+              "auprc": 0.45024907879693943,
+              "ece": 0.008015344155895289
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.0687595170215516,
+              "auprc": 0.3830239461029325,
+              "ece": 0.008598473738008042
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.0661794557868592,
+              "auprc": 0.45024907879693943,
+              "ece": 0.0061100943363108584
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06860713655966212,
+              "auprc": 0.3830239461029325,
+              "ece": 0.0035839704649595276
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06626115795592807,
+              "auprc": 0.43635507916790384,
+              "ece": 0.0067744171243132555
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06827652828651044,
+              "auprc": 0.3750614134516115,
+              "ece": 8.277120017265506e-19
+            }
+          }
+        }
+      },
+      "constrained_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10994638909240179,
+          "auprc": 0.596158191416287,
+          "ece": 0.015120233400824386
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11077941151108106,
+          "auprc": 0.5660541192532234,
+          "ece": 0.013912380076154104
+        },
+        "fit_params": {
+          "temperature_T": 0.9666233933520383,
+          "platt_a": 1.111036396029759,
+          "platt_b": 0.15961451200126614
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10985697980116597,
+              "auprc": 0.5961581914162871,
+              "ece": 0.010757792484986026
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11076174656636392,
+              "auprc": 0.5660541192532234,
+              "ece": 0.011357421338134291
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10964046276769258,
+              "auprc": 0.5961581914162871,
+              "ece": 0.010674409966257268
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.1103672446983224,
+              "auprc": 0.5660541192532234,
+              "ece": 0.009066900183422127
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.109573657494242,
+              "auprc": 0.5855081514389366,
+              "ece": 0.006824877276175048
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10983983453243991,
+              "auprc": 0.5588635586579374,
+              "ece": 1.6247395784765694e-17
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/severe": {
+        "blind_raw": {
+          "positive_rate": 0.093245761782792,
+          "brier": 0.06638453505389212,
+          "auprc": 0.4482072970057468,
+          "ece": 0.006679924290952219
+        },
+        "val_raw": {
+          "positive_rate": 0.09136867806796957,
+          "brier": 0.06886621803381732,
+          "auprc": 0.3816895640697018,
+          "ece": 0.007915031979652125
+        },
+        "fit_params": {
+          "temperature_T": 1.0211753624623383,
+          "platt_a": 1.082941757918679,
+          "platt_b": 0.257466961783566
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06637901870379592,
+              "auprc": 0.44820729700574685,
+              "ece": 0.008078427867446746
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06881513146639201,
+              "auprc": 0.3816895640697017,
+              "ece": 0.008395163980223308
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06627437805973768,
+              "auprc": 0.44820729700574685,
+              "ece": 0.006026580331225809
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.068678057438192,
+              "auprc": 0.3816895640697017,
+              "ece": 0.003239070047400484
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.093245761782792,
+              "brier": 0.06632717179856101,
+              "auprc": 0.43155505896428603,
+              "ece": 0.006230026370183272
+            },
+            "val_calibrated": {
+              "positive_rate": 0.09136867806796957,
+              "brier": 0.06835530674199036,
+              "auprc": 0.3715722625330484,
+              "ece": 3.739184623614939e-18
+            }
+          }
+        }
+      },
+      "constrained_no_feedback/moderate": {
+        "blind_raw": {
+          "positive_rate": 0.18744497709386035,
+          "brier": 0.10971214568172184,
+          "auprc": 0.5978404411554183,
+          "ece": 0.016495447375543107
+        },
+        "val_raw": {
+          "positive_rate": 0.18365036468169912,
+          "brier": 0.11054063671106458,
+          "auprc": 0.567721564764075,
+          "ece": 0.014695849910653331
+        },
+        "fit_params": {
+          "temperature_T": 0.9622031646363624,
+          "platt_a": 1.1156392960585266,
+          "platt_b": 0.15900252320272912
+        },
+        "methods": {
+          "temperature": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10960544493198404,
+              "auprc": 0.5978404411554183,
+              "ece": 0.01156219394309653
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11051226318955483,
+              "auprc": 0.567721564764075,
+              "ece": 0.01181291712369329
+            }
+          },
+          "platt": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.10937061207109905,
+              "auprc": 0.5978404411554183,
+              "ece": 0.010834491517542663
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.11011183484119494,
+              "auprc": 0.567721564764075,
+              "ece": 0.010436391657834984
+            }
+          },
+          "isotonic": {
+            "blind_calibrated": {
+              "positive_rate": 0.18744497709386035,
+              "brier": 0.1092420363955174,
+              "auprc": 0.5884116214038617,
+              "ece": 0.007185348262442008
+            },
+            "val_calibrated": {
+              "positive_rate": 0.18365036468169912,
+              "brier": 0.10954251575868361,
+              "auprc": 0.5614893254251283,
+              "ece": 2.4072575781494364e-18
+            }
+          }
+        }
+      }
+    }
+  },
+  "failures": [],
+  "finished_utc": "2026-09-24T06:14:10Z"
+}
